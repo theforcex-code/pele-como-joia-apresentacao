@@ -1,0 +1,292 @@
+/*
+  Pele como Jóia · apresentação.
+  Slides desenhados sobre 1920 x 1080: var(--u) vale 1 px do slide e tudo escala com a tela.
+  Helvetica (Helvetica Neue no Mac; Arial, a equivalente, no Windows). Fundo branco em tudo.
+  Grade: margens de 120; texto à esquerda (640), mídia à direita; título sempre no mesmo lugar e tamanho (60).
+  Mídia: cada imagem e vídeo aparece na proporção do próprio arquivo, nada esticado.
+  O Despertar é a única inversão (Big Bang). Os vídeos só tocam quando o slide está na tela.
+*/
+
+/* --u é calculado uma vez por slide (na área do slide) e herdado como medida fixa;
+   assim a área de mídia pode ser um container próprio sem mudar a escala do texto. */
+@property --u {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 1px;
+}
+
+:root {
+  --paper: #ffffff;
+  --ink: #111111;
+  --mute: #6e6e6e;
+  --soft: #2f2f2f;
+  --panel: #f3f3f3;
+  --tile: #eeeeee;
+  --line: rgb(17 17 17 / .12);
+  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color-scheme: light;
+}
+.dark {
+  --paper: #0d0d0d;
+  --ink: #f2f2f2;
+  --mute: #9a9a9a;
+  --soft: #d2d2d2;
+  --panel: #1a1a1a;
+  --tile: #191919;
+  --line: rgb(242 242 242 / .16);
+}
+
+html { background: #ffffff; overflow-x: hidden; }
+body {
+  margin: 0; font-family: var(--sans); color: var(--ink); background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.deck b, .deck strong { font-weight: 700; }
+.deck p, .deck h1, .deck h2, .deck h3, .deck figure, .deck ul, .deck li { margin: 0; padding: 0; }
+.deck ul { list-style: none; }
+.sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; margin: 0 !important; }
+
+/* ------------------------------------------------------------ slides: cada um ocupa uma tela */
+.deck { display: flex; flex-direction: column; }
+/* cada slide gruda no topo: o seguinte sobe por cima dele, como uma pilha de cartões */
+.page {
+  position: sticky; top: 0; overflow: hidden; flex: none;
+  width: 100%; height: 100vh; height: 100svh;
+  container-type: size;
+  background: var(--paper); color: var(--ink);
+  border-radius: 24px;
+  box-shadow: 0 -18px 60px rgb(17 17 17 / .12);
+}
+.page.coberto { visibility: hidden; }
+/* área do conteúdo: acompanha a proporção da tela (de 4:3 a 21:9) e fica centralizada fora disso */
+.stage {
+  position: absolute; inset: 0; margin: auto;
+  width: min(100cqw, 100cqh * 21 / 9); height: min(100cqh, 100cqw * 3 / 4);
+  container-type: size;
+}
+.stage > *, .page > * { --u: min(100cqw / 1920, 100cqh / 1080); }
+
+.in {
+  position: absolute;
+  left: calc(120 * var(--u)); right: calc(120 * var(--u));
+  top: calc(80 * var(--u)); bottom: calc(96 * var(--u));
+  display: flex; flex-direction: column;
+}
+/* cabeçalho: fase em destaque, etapa e parte */
+.hd {
+  display: flex; align-items: baseline; gap: calc(22 * var(--u)); flex: none;
+  font-size: calc(24 * var(--u)); line-height: 1.2;
+}
+.hd > .fase { font-weight: 700; color: var(--ink); }
+.hd > b { font-weight: 400; color: var(--ink); }
+.hd > span:not(.fase) { color: var(--mute); }
+.ct { flex: 1; min-height: 0; margin-top: calc(56 * var(--u)); display: flex; flex-direction: column; }
+
+/* títulos: um tamanho só (60) e sempre na mesma altura, logo abaixo do cabeçalho */
+.ttl { font-size: calc(60 * var(--u)); line-height: 1.06; letter-spacing: -.03em; font-weight: 700; color: var(--ink); }
+.ttl .num { color: var(--mute); margin-right: calc(18 * var(--u)); }
+.ov .hd { display: grid; grid-template-rows: calc(29 * var(--u)) auto; row-gap: calc(56 * var(--u)); align-items: end; }
+.ov .hd > span { grid-row: 1; }
+.ov .hd > .ttl { grid-row: 2; }
+
+/* ------------------------------------------------------------ mídia */
+.t { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.t video, .t img, .media {
+  display: block; width: 100%; height: 100%; min-height: 0;
+  object-fit: cover; object-position: center;
+  border-radius: calc(24 * var(--u)); background: var(--tile);
+}
+/* quadros numa linha, mesma altura, cada um na proporção dele: a linha cresce até faltar largura ou altura */
+.area { min-width: 0; min-height: 0; container-type: size; }
+.tiles {
+  display: flex; gap: calc(20 * var(--u));
+  width: min(100%, calc(100cqh * var(--sum) + (var(--n) - 1) * 20 * var(--u)));
+}
+/* peso = proporção x 100: com um quadro só (peso < 1) o flex não distribuiria o espaço todo */
+.tiles .t { flex: calc(var(--r) * 100) 1 0%; aspect-ratio: var(--r); }
+
+/* ------------------------------------------------------------ capa */
+.cover { background: var(--paper); }
+.cover > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cover .title { position: absolute; left: calc(120 * var(--u)); bottom: calc(96 * var(--u)); color: #111111; }
+.cover .kicker { font-size: calc(30 * var(--u)); line-height: 1.2; font-weight: 700; }
+.cover h1 { font-size: calc(150 * var(--u)); line-height: .95; letter-spacing: -.04em; font-weight: 700; margin-top: calc(26 * var(--u)); }
+.cover h1 .line { display: block; padding-bottom: .04em; }
+.cover .sub { font-size: calc(26 * var(--u)); line-height: 1.3; color: #2a2a2a; margin-top: calc(34 * var(--u)); }
+
+/* ------------------------------------------------------------ manifesto (conceito, 1ª parte) */
+.manifesto .ct { justify-content: center; }
+.statement { font-size: calc(48 * var(--u)); line-height: 1.2; letter-spacing: -.025em; max-width: calc(1540 * var(--u)); }
+
+/* ------------------------------------------------------------ conceito (2ª parte) */
+/* imagens e texto na mesma grade: 7 quadros com setas entre eles; o texto começa no 1º, 3º e 5º quadro */
+.strip, .cols3 { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr) calc(56 * var(--u))) minmax(0, 1fr); }
+.strip { align-items: start; }
+.strip .t video, .strip .t img { height: auto; aspect-ratio: 3 / 5; }
+.strip .t figcaption { font-size: calc(26 * var(--u)); font-weight: 700; text-align: center; margin-top: calc(18 * var(--u)); }
+.strip .arrow { aspect-ratio: 56 / 320; height: auto; display: grid; place-items: center; font-size: calc(28 * var(--u)); color: var(--mute); }
+.cols3 { margin-top: calc(64 * var(--u)); font-size: calc(26 * var(--u)); line-height: 1.45; color: var(--soft); }
+.cols3 > :nth-child(1) { grid-column: 1 / 4; }
+.cols3 > :nth-child(2) { grid-column: 5 / 8; }
+.cols3 > :nth-child(3) { grid-column: 9 / 14; }
+.cols3 b { color: var(--ink); }
+.cols3 p + p { margin-top: calc(18 * var(--u)); }
+
+/* ------------------------------------------------------------ mapa: as 8 etapas lado a lado, em retrato */
+.map { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); column-gap: calc(24 * var(--u)); align-items: start; }
+.map .t video, .map .t img { height: auto; aspect-ratio: 2 / 3; }
+.map .t figcaption { margin-top: calc(18 * var(--u)); font-size: calc(26 * var(--u)); font-weight: 700; line-height: 1.15; color: var(--mute); }
+.map .t figcaption strong { color: var(--ink); margin-left: calc(8 * var(--u)); }
+.map .t figcaption span { display: block; font-size: calc(21 * var(--u)); font-weight: 400; line-height: 1.38; margin-top: calc(8 * var(--u)); }
+.map .is-transition strong { font-style: italic; }
+
+/* ------------------------------------------------------------ abertura de etapa */
+/* imagem à direita, na proporção dela (só as horizontais viram retrato); texto à esquerda, no lugar de sempre */
+.opener .media {
+  position: absolute; right: calc(120 * var(--u)); top: calc(80 * var(--u));
+  height: calc(100% - 176 * var(--u)); width: auto; aspect-ratio: var(--r);
+}
+.opener .in { right: calc(120 * var(--u) + (100cqh - 176 * var(--u)) * var(--r) + 96 * var(--u)); }
+.opener .in > * { max-width: calc(860 * var(--u)); }
+.opener .hd { flex-direction: column; align-items: flex-start; gap: calc(10 * var(--u)); }
+.opener .hd > span { order: -1; font-size: calc(40 * var(--u)); font-weight: 700; letter-spacing: -.02em; color: var(--ink); }
+.opener .hd > b { font-size: calc(24 * var(--u)); font-weight: 400; color: var(--mute); }
+.opener h2 { font-size: calc(104 * var(--u)); line-height: 1.02; letter-spacing: -.035em; font-weight: 700; margin-top: calc(44 * var(--u)); }
+.opener .reino { font-size: calc(26 * var(--u)); color: var(--mute); margin-top: calc(18 * var(--u)); }
+.opener h3 { font-size: calc(36 * var(--u)); line-height: 1.2; font-weight: 700; letter-spacing: -.01em; margin-top: calc(40 * var(--u)); }
+.opener .narr { font-size: calc(28 * var(--u)); line-height: 1.45; color: var(--soft); margin-top: calc(16 * var(--u)); }
+.atm { margin-top: auto; background: var(--panel); border-radius: calc(24 * var(--u)); padding: calc(26 * var(--u)) calc(30 * var(--u)); display: grid; grid-template-columns: calc(170 * var(--u)) 1fr; font-size: calc(24 * var(--u)); line-height: 1.42; }
+.atm > p { color: var(--soft); }
+
+/* Beleza Natural: o peixe aparece solto no slide, menor, sem caixa e sem fundo, e nunca cortado */
+#beleza-natural .media {
+  height: calc((100% - 176 * var(--u)) * .62);
+  object-fit: contain; background: none; border-radius: 0;
+  mix-blend-mode: multiply;
+}
+
+/* ------------------------------------------------------------ item do loop e transição */
+/* side: texto 640 | mídia à direita. stack: texto em cima, mídia embaixo na largura toda (quando há muitos quadros) */
+.item { flex: 1; min-height: 0; display: grid; grid-template-columns: calc(640 * var(--u)) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); column-gap: calc(80 * var(--u)); }
+.item.side .tiles { margin-left: auto; }
+.item.stack { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); row-gap: calc(48 * var(--u)); }
+.item .txt p { font-size: calc(32 * var(--u)); line-height: 1.42; color: var(--soft); margin-top: calc(32 * var(--u)); }
+.item.stack .txt p { max-width: calc(1180 * var(--u)); }
+
+/* ------------------------------------------------------------ som e pratos */
+.rows { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.rows .r { display: grid; grid-template-columns: calc(640 * var(--u)) minmax(0, 1fr); column-gap: calc(80 * var(--u)); align-items: first baseline; padding-bottom: calc(64 * var(--u)); font-size: calc(32 * var(--u)); line-height: 1.42; }
+.rows .r:last-child { padding-bottom: 0; }
+/* linha suave separando os temas (som, pratos, som da transição) */
+.rows .r + .r { border-top: 1px solid var(--line); padding-top: calc(56 * var(--u)); }
+.rows .body { min-width: 0; }
+.rows .body p { color: var(--soft); max-width: calc(1000 * var(--u)); }
+.rows .r.has-media { flex: 1; min-height: 0; grid-template-rows: minmax(0, 1fr); align-items: start; }
+.rows .r.has-media .body { display: flex; flex-direction: column; height: 100%; min-height: 0; }
+.rows .body .area { flex: 1; min-height: calc(200 * var(--u)); margin-top: calc(32 * var(--u)); }
+
+/* ------------------------------------------------------------ quadro-resumo: faixas suaves, sem linhas */
+table.sum { width: 100%; border-collapse: separate; border-spacing: 0 calc(8 * var(--u)); table-layout: fixed; margin-top: calc(-8 * var(--u)); }
+.sum col:nth-child(1) { width: calc(170 * var(--u)); }
+.sum col:nth-child(2) { width: calc(56 * var(--u)); }
+.sum col:nth-child(3) { width: calc(210 * var(--u)); }
+.sum col:nth-child(4) { width: calc(290 * var(--u)); }
+.sum col:nth-child(5) { width: calc(210 * var(--u)); }
+.sum col:nth-child(6) { width: calc(360 * var(--u)); }
+.sum th, .sum td { text-align: left; padding: 0 calc(20 * var(--u)) 0 0; }
+.sum th { font-size: calc(20 * var(--u)); line-height: 1.2; font-weight: 400; color: var(--mute); padding-bottom: calc(4 * var(--u)); vertical-align: bottom; }
+.sum th:first-child { padding-left: calc(10 * var(--u)); }
+.sum td { font-size: calc(24 * var(--u)); line-height: 1.25; vertical-align: middle; color: var(--soft); background: var(--panel); padding-top: calc(8 * var(--u)); padding-bottom: calc(8 * var(--u)); }
+.sum td:first-child { padding-left: calc(10 * var(--u)); border-radius: calc(24 * var(--u)) 0 0 calc(24 * var(--u)); }
+.sum td:last-child { border-radius: 0 calc(24 * var(--u)) calc(24 * var(--u)) 0; }
+.sum td b { color: var(--ink); }
+.sum td.n { color: var(--mute); }
+.sum td img { display: block; width: calc(112 * var(--u)); height: calc(56 * var(--u)); object-fit: cover; border-radius: calc(14 * var(--u)); background: var(--tile); }
+
+/* ------------------------------------------------------------ notas */
+.notes ul.l { columns: 2; column-gap: calc(96 * var(--u)); font-size: calc(26 * var(--u)); line-height: 1.45; color: var(--soft); }
+.notes ul.l > li { break-inside: avoid; margin-bottom: calc(26 * var(--u)); }
+.notes ul.l > li:last-child { margin-bottom: 0; }
+.notes ul.l b { color: var(--ink); }
+.notes ul.s { padding-left: calc(24 * var(--u)); margin-top: calc(8 * var(--u)); }
+.notes ul.s li + li { margin-top: calc(8 * var(--u)); }
+.notes .c { color: var(--mute); }
+
+/* ------------------------------------------------------------ telas em pé (celular, painel estreito, monitor vertical) */
+/* Cada slide continua ocupando exatamente uma tela. A área do slide passa a ser desenhada sobre 1080 x 1920
+   e os modelos se reorganizam na vertical: texto em cima, mídia embaixo. */
+@media (orientation: portrait) {
+  .stage { width: min(100cqw, 100cqh * 3 / 4); height: min(100cqh, 100cqw * 21 / 9); }
+  .stage > *, .page > * { --u: min(100cqw / 1080, 100cqh / 1920); }
+  .in { left: calc(72 * var(--u)); right: calc(72 * var(--u)); top: calc(96 * var(--u)); bottom: calc(96 * var(--u)); }
+  .hd { font-size: calc(30 * var(--u)); flex-wrap: wrap; row-gap: calc(6 * var(--u)); column-gap: calc(18 * var(--u)); }
+  .ct { margin-top: calc(48 * var(--u)); }
+  .ttl { font-size: calc(68 * var(--u)); }
+  .ov .hd { grid-template-rows: calc(36 * var(--u)) auto; row-gap: calc(48 * var(--u)); }
+  .t video, .t img, .media { border-radius: calc(28 * var(--u)); }
+
+  /* capa */
+  .cover .title { left: calc(72 * var(--u)); right: calc(72 * var(--u)); bottom: calc(120 * var(--u)); }
+  .cover .kicker { font-size: calc(36 * var(--u)); }
+  .cover h1 { font-size: calc(140 * var(--u)); }
+  .cover .sub { font-size: calc(32 * var(--u)); }
+
+  /* manifesto */
+  .statement { font-size: calc(56 * var(--u)); max-width: none; }
+
+  /* mapa: 2 fileiras de 4 */
+  .map { grid-template-columns: repeat(4, minmax(0, 1fr)); row-gap: calc(56 * var(--u)); column-gap: calc(24 * var(--u)); }
+  .map .t figcaption { font-size: calc(28 * var(--u)); }
+  .map .t figcaption span { font-size: calc(24 * var(--u)); }
+
+  /* abertura: imagem em cima, texto embaixo */
+  .opener .media { left: calc(72 * var(--u)); right: auto; top: calc(96 * var(--u)); width: calc(100% - 144 * var(--u)); height: 34%; aspect-ratio: auto; }
+  #beleza-natural .media { height: 30%; }
+  .opener .in { top: calc(96 * var(--u) + 34% + 48 * var(--u)); right: calc(72 * var(--u)); }
+  .opener .in > * { max-width: none; }
+  .opener .hd > span { font-size: calc(44 * var(--u)); }
+  .opener .hd > b { font-size: calc(28 * var(--u)); }
+  .opener h2 { font-size: calc(96 * var(--u)); margin-top: calc(24 * var(--u)); }
+  .opener .reino { font-size: calc(30 * var(--u)); margin-top: calc(14 * var(--u)); }
+  .opener h3 { font-size: calc(40 * var(--u)); margin-top: calc(30 * var(--u)); }
+  .opener .narr { font-size: calc(32 * var(--u)); margin-top: calc(12 * var(--u)); margin-bottom: calc(28 * var(--u)); }
+  .atm { grid-template-columns: calc(170 * var(--u)) 1fr; font-size: calc(28 * var(--u)); padding: calc(24 * var(--u)) calc(28 * var(--u)); }
+
+  /* item e transição: texto em cima, quadros numa linha embaixo */
+  .item, .item.side, .item.stack { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); row-gap: calc(48 * var(--u)); }
+  .item.side .tiles { margin-left: 0; }
+  .item .txt p, .item.stack .txt p { font-size: calc(34 * var(--u)); max-width: none; margin-top: calc(28 * var(--u)); }
+
+  /* som e pratos: rótulo em cima do texto */
+  .rows .r, .rows .r.has-media { grid-template-columns: minmax(0, 1fr); row-gap: calc(16 * var(--u)); font-size: calc(34 * var(--u)); padding-bottom: calc(48 * var(--u)); }
+  .rows .r.has-media { grid-template-rows: auto minmax(0, 1fr); }
+  .rows .r + .r { padding-top: calc(48 * var(--u)); }
+  .rows .body p { max-width: none; }
+
+  /* quadro-resumo: um cartão por etapa */
+  table.sum, .sum tbody { display: block; margin: 0; }
+  .sum colgroup, .sum thead { display: none; }
+  .sum tr { display: grid; grid-template-columns: calc(120 * var(--u)) repeat(3, minmax(0, 1fr)); column-gap: calc(18 * var(--u)); row-gap: calc(10 * var(--u)); align-items: start; background: var(--panel); border-radius: calc(24 * var(--u)); padding: calc(14 * var(--u)) calc(20 * var(--u)) calc(14 * var(--u)) calc(14 * var(--u)); }
+  .sum tr + tr { margin-top: calc(12 * var(--u)); }
+  .sum td, .sum td:first-child, .sum td:last-child { display: block; background: none; padding: 0; border-radius: 0; font-size: calc(22 * var(--u)); line-height: 1.25; }
+  .sum td:first-child { grid-row: 1 / span 2; }
+  .sum td img { width: calc(120 * var(--u)); height: calc(120 * var(--u)); border-radius: calc(16 * var(--u)); }
+  .sum td.n { font-size: calc(34 * var(--u)); font-weight: 700; line-height: 1; }
+  .sum td[data-l]::before { content: attr(data-l); display: block; font-size: calc(16 * var(--u)); color: var(--mute); margin-bottom: calc(4 * var(--u)); }
+
+  /* conceito e notas (se voltarem) */
+  .strip { grid-template-columns: repeat(4, minmax(0, 1fr)); row-gap: calc(24 * var(--u)); column-gap: calc(16 * var(--u)); }
+  .strip .arrow { display: none; }
+  .cols3 { grid-template-columns: minmax(0, 1fr); row-gap: calc(24 * var(--u)); }
+  .cols3 > :nth-child(n) { grid-column: auto; }
+  .notes ul.l { columns: 1; }
+}
+
+/* ------------------------------------------------------------ impressão: 16:9 */
+@media print {
+  @page { size: 13.333in 7.5in; margin: 0; }
+  .deck { display: block; padding: 0; }
+  .page { position: relative; width: 13.333in; height: 7.5in; break-after: page; border-radius: 0; box-shadow: none; }
+  .page.coberto { visibility: visible; }
+}
