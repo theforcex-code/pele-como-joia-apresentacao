@@ -39,11 +39,14 @@ function Html({ as: Tag = "p", html, className }: { as?: "p" | "div" | "ul"; htm
   return <Tag className={className} dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
-function Page({ slide, cls, style, children }: { slide: Slide; cls: string; style?: CSSVars; children: ReactNode }) {
+function Page({ slide, cls, n, style, children }: { slide: Slide; cls: string; n?: number; style?: CSSVars; children: ReactNode }) {
   const dark = "dark" in slide && slide.dark ? " dark" : "";
   return (
     <section className={`page ${cls}${dark}`} id={slide.id} style={style}>
-      <div className="stage">{children}</div>
+      <div className="stage">
+        {children}
+        {n !== undefined && <span className="pg">{String(n).padStart(2, "0")}</span>}
+      </div>
     </section>
   );
 }
@@ -69,12 +72,13 @@ function OverviewHd({ kicker, title }: { kicker?: string; title: string }) {
   );
 }
 
-function SlideView({ s }: { s: Slide }) {
+function SlideView({ s, n }: { s: Slide; n: number }) {
   switch (s.type) {
     case "cover":
       return (
         <section className="page cover" id={s.id}>
           <MediaEl m={s.media} />
+          <span className="pg">{String(n).padStart(2, "0")}</span>
           <div className="title">
             <p className="kicker">{s.kicker}</p>
             <h1>
@@ -89,7 +93,7 @@ function SlideView({ s }: { s: Slide }) {
 
     case "manifesto":
       return (
-        <Page slide={s} cls="manifesto ov">
+        <Page slide={s} n={n} cls="manifesto ov">
           <div className="in">
             <OverviewHd kicker={s.kicker} title={s.title} />
             <div className="ct">
@@ -101,7 +105,7 @@ function SlideView({ s }: { s: Slide }) {
 
     case "conceito":
       return (
-        <Page slide={s} cls="conceito-b ov">
+        <Page slide={s} n={n} cls="conceito-b ov">
           <div className="in">
             <OverviewHd kicker={s.kicker} title={s.title} />
             <div className="ct">
@@ -126,13 +130,13 @@ function SlideView({ s }: { s: Slide }) {
 
     case "mapa":
       return (
-        <Page slide={s} cls="mapa ov">
+        <Page slide={s} n={n} cls="mapa ov">
           <div className="in">
             <OverviewHd kicker={s.kicker} title={s.title} />
             <div className="ct">
               <div className="map">
                 {s.cards.map((c) => (
-                  <figure className={`t${c.transition ? " is-transition" : ""}`} key={c.n}>
+                  <figure className={`t${c.transition ? " is-transition" : ""}`} key={c.title}>
                     <MediaEl m={c.media} />
                     <figcaption>
                       {c.n}
@@ -150,7 +154,7 @@ function SlideView({ s }: { s: Slide }) {
     case "opener":
       // A imagem da abertura fica na proporção dela; só as horizontais são recortadas num retrato (0,8).
       return (
-        <Page slide={s} cls="opener" style={{ "--r": Math.min(s.media.r, 0.8) }}>
+        <Page slide={s} n={n} cls="opener" style={{ "--r": s.crop ?? Math.min(s.media.r, 0.8) }}>
           <MediaEl m={s.media} className="media" />
           <div className="in">
             <header className="hd">
@@ -171,7 +175,7 @@ function SlideView({ s }: { s: Slide }) {
 
     case "item":
       return (
-        <Page slide={s} cls={s.variant}>
+        <Page slide={s} n={n} cls={s.variant}>
           <div className="in">
             <StageHd hd={s.hd} />
             <div className="ct">
@@ -190,9 +194,18 @@ function SlideView({ s }: { s: Slide }) {
         </Page>
       );
 
+    case "board":
+      return (
+        <Page slide={s} n={n} cls={s.full ? "board full" : "board"}>
+          <div className="in">
+            <Tiles tiles={s.tiles} />
+          </div>
+        </Page>
+      );
+
     case "som":
       return (
-        <Page slide={s} cls="som">
+        <Page slide={s} n={n} cls="som">
           <div className="in">
             <StageHd hd={s.hd} />
             <div className="ct">
@@ -214,7 +227,7 @@ function SlideView({ s }: { s: Slide }) {
 
     case "resumo":
       return (
-        <Page slide={s} cls="resumo ov">
+        <Page slide={s} n={n} cls="resumo ov">
           <div className="in">
             <OverviewHd kicker={s.kicker} title={s.title} />
             <div className="ct">
@@ -260,7 +273,7 @@ function SlideView({ s }: { s: Slide }) {
 
     case "notas":
       return (
-        <Page slide={s} cls="notes ov">
+        <Page slide={s} n={n} cls="notes ov">
           <div className="in">
             <OverviewHd title={s.title} />
             <div className="ct">
@@ -273,5 +286,5 @@ function SlideView({ s }: { s: Slide }) {
 }
 
 export function Slides() {
-  return slides.map((s) => <SlideView key={s.id} s={s} />);
+  return slides.map((s, i) => <SlideView key={s.id} s={s} n={i + 1} />);
 }

@@ -29,13 +29,14 @@ export function MediaEl({ m, className }: { m: Media; className?: string }) {
  * A linha ocupa a largura da área até a altura dela acabar: o CSS usa --sum (soma das proporções) e --n.
  */
 export function Tiles({ tiles }: { tiles: Media[] }) {
-  const sum = tiles.reduce((acc, t) => acc + t.r, 0);
+  // a soma pondera pelo peso: um quadro com k menor ocupa menos largura e menos altura
+  const sum = tiles.reduce((acc, t) => acc + t.r * (t.k ?? 1), 0);
   const style: CSSVars = { "--n": tiles.length, "--sum": sum.toFixed(4) };
   return (
     <div className="area">
       <div className="tiles" data-n={tiles.length} style={style}>
         {tiles.map((t, i) => (
-          <figure className="t" key={`${i}-${t.src}`} style={{ "--r": t.r } as CSSVars}>
+          <figure className="t" key={`${i}-${t.src}`} style={{ "--r": t.r, "--k": t.k ?? 1 } as CSSVars}>
             <MediaEl m={t} />
             {t.label && <figcaption className="sr">{t.label}</figcaption>}
           </figure>

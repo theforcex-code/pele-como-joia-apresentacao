@@ -69,8 +69,8 @@ body {
 
 .in {
   position: absolute;
-  left: calc(120 * var(--u)); right: calc(120 * var(--u));
-  top: calc(80 * var(--u)); bottom: calc(96 * var(--u));
+  left: calc(80 * var(--u)); right: calc(80 * var(--u));
+  top: calc(64 * var(--u)); bottom: calc(72 * var(--u));
   display: flex; flex-direction: column;
 }
 /* cabeçalho: fase em destaque, etapa e parte */
@@ -81,12 +81,13 @@ body {
 .hd > .fase { font-weight: 700; color: var(--ink); }
 .hd > b { font-weight: 400; color: var(--ink); }
 .hd > span:not(.fase) { color: var(--mute); }
-.ct { flex: 1; min-height: 0; margin-top: calc(56 * var(--u)); display: flex; flex-direction: column; }
+.ct { flex: 1; min-height: 0; margin-top: calc(44 * var(--u)); display: flex; flex-direction: column; }
 
 /* títulos: um tamanho só (60) e sempre na mesma altura, logo abaixo do cabeçalho */
 .ttl { font-size: calc(60 * var(--u)); line-height: 1.06; letter-spacing: -.03em; font-weight: 700; color: var(--ink); }
 .ttl .num { color: var(--mute); margin-right: calc(18 * var(--u)); }
-.ov .hd { display: grid; grid-template-rows: calc(29 * var(--u)) auto; row-gap: calc(56 * var(--u)); align-items: end; }
+/* o vao casa com o respiro da .ct (44u) para o titulo cair na mesma altura dos slides de etapa */
+.ov .hd { display: grid; grid-template-rows: calc(29 * var(--u)) auto; row-gap: calc(44 * var(--u)); align-items: end; }
 .ov .hd > span { grid-row: 1; }
 .ov .hd > .ttl { grid-row: 2; }
 
@@ -100,16 +101,16 @@ body {
 /* quadros numa linha, mesma altura, cada um na proporção dele: a linha cresce até faltar largura ou altura */
 .area { min-width: 0; min-height: 0; container-type: size; }
 .tiles {
-  display: flex; gap: calc(20 * var(--u));
+  display: flex; align-items: center; gap: calc(20 * var(--u));
   width: min(100%, calc(100cqh * var(--sum) + (var(--n) - 1) * 20 * var(--u)));
 }
-/* peso = proporção x 100: com um quadro só (peso < 1) o flex não distribuiria o espaço todo */
-.tiles .t { flex: calc(var(--r) * 100) 1 0%; aspect-ratio: var(--r); }
+/* peso = proporção x destaque x 100: com um quadro só (peso < 1) o flex não distribuiria o espaço todo */
+.tiles .t { flex: calc(var(--r) * var(--k, 1) * 100) 1 0%; aspect-ratio: var(--r); }
 
 /* ------------------------------------------------------------ capa */
 .cover { background: var(--paper); }
 .cover > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.cover .title { position: absolute; left: calc(120 * var(--u)); bottom: calc(96 * var(--u)); color: #111111; }
+.cover .title { position: absolute; left: calc(80 * var(--u)); bottom: calc(72 * var(--u)); color: #111111; }
 .cover .kicker { font-size: calc(30 * var(--u)); line-height: 1.2; font-weight: 700; }
 .cover h1 { font-size: calc(150 * var(--u)); line-height: .95; letter-spacing: -.04em; font-weight: 700; margin-top: calc(26 * var(--u)); }
 .cover h1 .line { display: block; padding-bottom: .04em; }
@@ -134,7 +135,7 @@ body {
 .cols3 p + p { margin-top: calc(18 * var(--u)); }
 
 /* ------------------------------------------------------------ mapa: as 8 etapas lado a lado, em retrato */
-.map { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); column-gap: calc(24 * var(--u)); align-items: start; }
+.map { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); column-gap: calc(24 * var(--u)); align-items: start; }
 .map .t video, .map .t img { height: auto; aspect-ratio: 2 / 3; }
 .map .t figcaption { margin-top: calc(18 * var(--u)); font-size: calc(26 * var(--u)); font-weight: 700; line-height: 1.15; color: var(--mute); }
 .map .t figcaption strong { color: var(--ink); margin-left: calc(8 * var(--u)); }
@@ -144,10 +145,10 @@ body {
 /* ------------------------------------------------------------ abertura de etapa */
 /* imagem à direita, na proporção dela (só as horizontais viram retrato); texto à esquerda, no lugar de sempre */
 .opener .media {
-  position: absolute; right: calc(120 * var(--u)); top: calc(80 * var(--u));
-  height: calc(100% - 176 * var(--u)); width: auto; aspect-ratio: var(--r);
+  position: absolute; right: calc(80 * var(--u)); top: calc(64 * var(--u));
+  height: calc(100% - 136 * var(--u)); width: auto; aspect-ratio: var(--r);
 }
-.opener .in { right: calc(120 * var(--u) + (100cqh - 176 * var(--u)) * var(--r) + 96 * var(--u)); }
+.opener .in { right: calc(80 * var(--u) + (100cqh - 136 * var(--u)) * var(--r) + 96 * var(--u)); }
 .opener .in > * { max-width: calc(860 * var(--u)); }
 .opener .hd { flex-direction: column; align-items: flex-start; gap: calc(10 * var(--u)); }
 .opener .hd > span { order: -1; font-size: calc(40 * var(--u)); font-weight: 700; letter-spacing: -.02em; color: var(--ink); }
@@ -159,20 +160,35 @@ body {
 .atm { margin-top: auto; background: var(--panel); border-radius: calc(24 * var(--u)); padding: calc(26 * var(--u)) calc(30 * var(--u)); display: grid; grid-template-columns: calc(170 * var(--u)) 1fr; font-size: calc(24 * var(--u)); line-height: 1.42; }
 .atm > p { color: var(--soft); }
 
-/* Beleza Natural: o peixe aparece solto no slide, menor, sem caixa e sem fundo, e nunca cortado */
+/* Beleza Natural: o peixe aparece solto no slide, sem caixa e sem fundo, e nunca cortado */
 #beleza-natural .media {
-  height: calc((100% - 176 * var(--u)) * .62);
   object-fit: contain; background: none; border-radius: 0;
   mix-blend-mode: multiply;
 }
 
 /* ------------------------------------------------------------ item do loop e transição */
-/* side: texto 640 | mídia à direita. stack: texto em cima, mídia embaixo na largura toda (quando há muitos quadros) */
-.item { flex: 1; min-height: 0; display: grid; grid-template-columns: calc(640 * var(--u)) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); column-gap: calc(80 * var(--u)); }
+/* side: texto 560 | mídia à direita. stack: texto em cima, mídia embaixo na largura toda (quando há muitos quadros) */
+.item { flex: 1; min-height: 0; display: grid; grid-template-columns: calc(560 * var(--u)) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); column-gap: calc(64 * var(--u)); }
 .item.side .tiles { margin-left: auto; }
-.item.stack { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); row-gap: calc(48 * var(--u)); }
+.item.stack { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); row-gap: calc(36 * var(--u)); }
 .item .txt p { font-size: calc(32 * var(--u)); line-height: 1.42; color: var(--soft); margin-top: calc(32 * var(--u)); }
 .item.stack .txt p { max-width: calc(1180 * var(--u)); }
+
+/* numero da pagina: na faixa de margem abaixo da caixa de conteudo, nunca sobre a midia */
+.pg {
+  position: absolute; right: calc(80 * var(--u)); bottom: calc(26 * var(--u));
+  font-size: calc(22 * var(--u)); line-height: 1; letter-spacing: .06em;
+  font-variant-numeric: tabular-nums; color: var(--mute); pointer-events: none;
+}
+/* so a capa tem midia sangrando ate a borda: la o numero ainda precisa de contraste proprio */
+.cover .pg { color: #111111; mix-blend-mode: difference; filter: invert(1); }
+
+/* ------------------------------------------------------------ board só de mídia */
+/* sem cabeçalho nem texto: os quadros tomam a área toda do slide, centralizados */
+.board .area { flex: 1; display: flex; align-items: center; }
+.board .tiles { margin-inline: auto; }
+/* full: sem a margem do slide, o quadro usa a altura inteira */
+.board.full .in { inset: 0; }
 
 /* ------------------------------------------------------------ som e pratos */
 .rows { flex: 1; min-height: 0; display: flex; flex-direction: column; }
@@ -236,7 +252,7 @@ table.sum { width: 100%; border-collapse: separate; border-spacing: 0 calc(8 * v
   .statement { font-size: calc(56 * var(--u)); max-width: none; }
 
   /* mapa: 2 fileiras de 4 */
-  .map { grid-template-columns: repeat(4, minmax(0, 1fr)); row-gap: calc(56 * var(--u)); column-gap: calc(24 * var(--u)); }
+  .map { grid-auto-flow: row; grid-template-columns: repeat(4, minmax(0, 1fr)); row-gap: calc(56 * var(--u)); column-gap: calc(24 * var(--u)); }
   .map .t figcaption { font-size: calc(28 * var(--u)); }
   .map .t figcaption span { font-size: calc(24 * var(--u)); }
 
