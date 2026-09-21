@@ -718,9 +718,9 @@ export const slides: Slide[] = [
     "dark": false,
     "media": {
       "kind": "video",
-      "src": "/media/materia-veu-ambar.mp4",
-      "poster": "/media/materia-veu-ambar.jpg",
-      "r": 0.5625
+      "src": "/media/dunas-video-1-nuvem-de-areia.mp4",
+      "poster": "/media/dunas-video-1-nuvem-de-areia.jpg",
+      "r": 0.8
     },
     "etapa": "Etapa 6 de 8",
     "fase": "Sobremesa",
@@ -747,13 +747,6 @@ export const slides: Slide[] = [
     "title": "Dunas e Erosão",
     "html": "Piso e paredes exibem ondulações de areia dourada movendo-se como dunas ao vento; a mesa reflete padrões de erosão em rocha.",
     "tiles": [
-      {
-        "kind": "video",
-        "src": "/media/dunas-video-1-nuvem-de-areia.mp4",
-        "poster": "/media/dunas-video-1-nuvem-de-areia.jpg",
-        "r": 0.8,
-        "label": "dunas-video-1-nuvem-de-areia"
-      },
       {
         "kind": "video",
         "src": "/media/dunas-video-2-ouro-liquido.mp4",
@@ -889,12 +882,6 @@ export const slides: Slide[] = [
     "title": "O Diamante Aparece",
     "html": "Cristalização lenta nas paredes, como quartzo ou geodo crescendo em câmera lenta; a areia dá lugar a facetas translúcidas que começam a quebrar a luz em cor.",
     "tiles": [
-      {
-        "kind": "image",
-        "src": "/media/cristais-1-mosaico-cor.jpg",
-        "r": 0.625,
-        "label": "cristais-1-mosaico-cor"
-      },
       {
         "kind": "video",
         "src": "/media/cristais-3-facetas.mp4",
