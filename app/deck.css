@@ -245,6 +245,15 @@ table.sum { width: 100%; border-collapse: separate; border-spacing: 0 calc(8 * v
   #inicio .in { right: calc(100% - (80 + 660) * var(--u)); }
 }
 
+/* ------------------------------------------------------------ testes (última página)
+   Imagens panorâmicas na largura toda, uma embaixo da outra: a página cresce além de uma tela e rola. */
+.page.testes { position: relative; height: auto; min-height: 100vh; min-height: 100svh; container-type: inline-size; }
+.page.testes > .stage { position: relative; inset: auto; margin: 0; width: 100%; height: auto; container-type: inline-size; }
+.page.testes .in { --u: calc(100cqw / 1920); position: relative; inset: auto; padding: calc(64 * var(--u)) calc(80 * var(--u)) calc(96 * var(--u)); }
+.page.testes .pilha { display: flex; flex-direction: column; gap: calc(24 * var(--u)); margin-top: calc(44 * var(--u)); }
+.page.testes .pilha figure { width: 100%; }
+.page.testes .pilha img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: calc(24 * var(--u)); }
+
 /* ------------------------------------------------------------ telas em pé (celular, painel estreito, monitor vertical) */
 /* Cada slide continua ocupando exatamente uma tela. A área do slide passa a ser desenhada sobre 1080 x 1920
    e os modelos se reorganizam na vertical: texto em cima, mídia embaixo. */

@@ -1100,5 +1100,27 @@ export const slides: Slide[] = [
         ]
       }
     ]
+  },
+  {
+    "type": "testes",
+    "id": "testes",
+    "title": "Testes",
+    "tiles": [
+      {
+        "kind": "image",
+        "src": "/media/teste-anel-vidro-poente.jpg",
+        "r": 1.9977
+      },
+      {
+        "kind": "image",
+        "src": "/media/teste-anel-ouro-deserto.jpg",
+        "r": 2.0
+      },
+      {
+        "kind": "image",
+        "src": "/media/teste-anel-diamante-mar.jpg",
+        "r": 2.0
+      }
+    ]
   }
 ];

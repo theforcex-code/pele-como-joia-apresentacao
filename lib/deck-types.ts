@@ -89,4 +89,6 @@ export type Slide =
       head: string[];
       rows: { thumb: Media; cells: string[] }[];
     }
-  | { type: "notas"; id: string; title: string; html: string };
+  | { type: "notas"; id: string; title: string; html: string }
+  /** Página de testes: imagens na largura toda, uma embaixo da outra; a página cresce com elas. */
+  | { type: "testes"; id: string; title: string; tiles: Media[] };

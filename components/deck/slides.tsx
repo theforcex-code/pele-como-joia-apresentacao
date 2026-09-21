@@ -284,6 +284,22 @@ function SlideView({ s, n }: { s: Slide; n: number }) {
         </Page>
       );
 
+    case "testes":
+      return (
+        <Page slide={s} n={n} cls="testes ov">
+          <div className="in">
+            <OverviewHd title={s.title} />
+            <div className="pilha">
+              {s.tiles.map((m, i) => (
+                <figure key={`${i}-${m.src}`} style={{ aspectRatio: m.r }}>
+                  <MediaEl m={m} />
+                </figure>
+              ))}
+            </div>
+          </div>
+        </Page>
+      );
+
     case "notas":
       return (
         <Page slide={s} n={n} cls="notes ov">
