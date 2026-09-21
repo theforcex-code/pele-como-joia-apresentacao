@@ -749,13 +749,6 @@ export const slides: Slide[] = [
     "tiles": [
       {
         "kind": "video",
-        "src": "/media/materia-veu-ambar.mp4",
-        "poster": "/media/materia-veu-ambar.jpg",
-        "r": 0.5625,
-        "label": "materia-veu-ambar"
-      },
-      {
-        "kind": "video",
         "src": "/media/dunas-video-2-ouro-liquido.mp4",
         "poster": "/media/dunas-video-2-ouro-liquido.jpg",
         "r": 0.8,
