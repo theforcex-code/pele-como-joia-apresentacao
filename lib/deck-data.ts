@@ -754,34 +754,25 @@ export const slides: Slide[] = [
     "html": "Piso e paredes exibem ondulações de areia dourada movendo-se como dunas ao vento; a mesa reflete padrões de erosão em rocha.",
     "tiles": [
       {
-        "kind": "image",
-        "src": "/media/dunas-1-areia-luz.jpg",
-        "r": 0.7503,
-        "label": "dunas-1-areia-luz"
+        "kind": "video",
+        "src": "/media/dunas-video-1-nuvem-de-areia.mp4",
+        "poster": "/media/dunas-video-1-nuvem-de-areia.jpg",
+        "r": 0.8,
+        "label": "dunas-video-1-nuvem-de-areia"
       },
       {
-        "kind": "image",
-        "src": "/media/entrada-1-areia-dourada.jpg",
-        "r": 0.6667,
-        "label": "entrada-1-areia-dourada"
+        "kind": "video",
+        "src": "/media/dunas-video-2-ouro-liquido.mp4",
+        "poster": "/media/dunas-video-2-ouro-liquido.jpg",
+        "r": 0.8,
+        "label": "dunas-video-2-ouro-liquido"
       },
       {
-        "kind": "image",
-        "src": "/media/dunas-3-tecido-dourado.jpg",
-        "r": 0.6661,
-        "label": "dunas-3-tecido-dourado"
-      },
-      {
-        "kind": "image",
-        "src": "/media/dunas-4-cascata-ouro.jpg",
-        "r": 0.8133,
-        "label": "dunas-4-cascata-ouro"
-      },
-      {
-        "kind": "image",
-        "src": "/media/materia-fluido-ouro.jpg",
-        "r": 0.5625,
-        "label": "materia-fluido-ouro"
+        "kind": "video",
+        "src": "/media/dunas-video-3-poeira-dourada.mp4",
+        "poster": "/media/dunas-video-3-poeira-dourada.jpg",
+        "r": 0.8,
+        "label": "dunas-video-3-poeira-dourada"
       }
     ],
     "layout": "stack"
