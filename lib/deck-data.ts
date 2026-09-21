@@ -890,9 +890,17 @@ export const slides: Slide[] = [
         "label": "final-4-diamante"
       },
       {
-        "kind": "image",
-        "src": "/media/final-anel-rubi-diamantes.jpg",
-        "r": 0.7051,
+        "kind": "video",
+        "src": "/media/final-anel-borboleta-ouro-rose.mp4",
+        "poster": "/media/final-anel-borboleta-ouro-rose.jpg",
+        "r": 0.8,
+        "label": "final-anel-borboleta-ouro-rose"
+      },
+      {
+        "kind": "video",
+        "src": "/media/final-anel-rubi-diamantes.mp4",
+        "poster": "/media/final-anel-rubi-diamantes-video.jpg",
+        "r": 0.8,
         "label": "final-anel-rubi-diamantes"
       }
     ],
