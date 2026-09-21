@@ -95,9 +95,9 @@ export const slides: Slide[] = [
       {
         "media": {
           "kind": "video",
-          "src": "/media/materia-veu-ambar.mp4",
-          "poster": "/media/materia-veu-ambar.jpg",
-          "r": 0.5625
+          "src": "/media/dunas-video-3-poeira-dourada.mp4",
+          "poster": "/media/dunas-video-3-poeira-dourada.jpg",
+          "r": 0.8
         },
         "n": "6",
         "title": "Matéria Primária - Sobremesa",
@@ -107,9 +107,9 @@ export const slides: Slide[] = [
       {
         "media": {
           "kind": "video",
-          "src": "/media/dunas-video-3-poeira-dourada.mp4",
-          "poster": "/media/dunas-video-3-poeira-dourada.jpg",
-          "r": 0.8
+          "src": "/media/particula-rara-cascata-ouro.mp4",
+          "poster": "/media/particula-rara-cascata-ouro.jpg",
+          "r": 1.7704
         },
         "n": "7",
         "title": "Partícula Rara - Transição",
