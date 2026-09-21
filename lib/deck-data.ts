@@ -83,9 +83,9 @@ export const slides: Slide[] = [
       {
         "media": {
           "kind": "video",
-          "src": "/media/vento-e-ondas-invertido.mp4",
-          "poster": "/media/vento-e-ondas-invertido.jpg",
-          "r": 0.5625
+          "src": "/media/pele-petala-gota.mp4",
+          "poster": "/media/pele-petala-gota.jpg",
+          "r": 1.7985
         },
         "n": "5",
         "title": "Beleza Natural - Prato Principal",
