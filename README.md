@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pele como Jóia
 
-## Getting Started
+Roteiro narrativo de um jantar imersivo em 8 etapas, como apresentação de slides.
+Next.js 16 com Turbopack.
 
-First, run the development server:
+## Abrir em outro computador
 
 ```bash
+git clone https://github.com/theforcex-code/pele-como-joia-apresentacao.git
+cd pele-como-joia-apresentacao
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre em http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O `node_modules` não vai pelo git, por isso o `npm install` é obrigatório na
+primeira vez. No Windows, clone numa pasta de caminho curto (por exemplo
+`C:\Projetos\`): o limite de 260 caracteres do sistema faz o clone falhar no
+meio, com erro que não deixa clara a causa.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Navegação
 
-## Learn More
+Setas, PageUp/PageDown e espaço mudam de slide. `Home` e `End` vão ao primeiro
+e ao último. `F` entra em tela cheia. Os vídeos só tocam no slide visível.
 
-To learn more about Next.js, take a look at the following resources:
+## HTML estático
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+EXPORT=1 npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Gera `/out` com o deck inteiro, incluindo as mídias. **Precisa ser servido por
+HTTP** — os caminhos são absolutos e o `index.html` não funciona aberto direto
+do disco. Para testar:
 
-## Deploy on Vercel
+```bash
+npx serve out
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Estrutura
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `lib/deck-data.ts` — o roteiro inteiro: textos, mídias e ordem dos slides
+- `lib/deck-types.ts` — os tipos de slide (capa, abertura, board, som, mapa)
+- `components/deck/slides.tsx` — como cada tipo é desenhado
+- `app/deck.css` — a grade: margens, coluna de texto, proporção das mídias
+- `public/media/` — vídeos e imagens
+
+A mídia de cada board aparece na proporção do próprio arquivo, nunca esticada.
+O layout de um board segue a orientação da mídia: soma de proporções abaixo de
+1,70 usa `side`, acima usa `stack`.
