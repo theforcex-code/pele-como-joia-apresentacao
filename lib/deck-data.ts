@@ -23,7 +23,7 @@ export const slides: Slide[] = [
     "id": "conceito",
     "kicker": "A Forma e a Partícula",
     "title": "Conceito estrutural",
-    "html": "O despertar da matéria é um convite à uma experiência gastronômica multissensorial sobre a pele e a beleza sublime. Em 8 momentos, a sala, o som e os pratos contam uma transformação: a partir da partícula divina, atravessamos a criação desde o seu primeiro momento, entendendo como a vida se inicia na água, costurando a realidade até chegarmos na pele e sua beleza. Transitando pelo orgânico e o sintético, entendemos onde as partículas mais raras se encontram.",
+    "html": "O despertar da matéria é um convite a uma experiência gastronômica multissensorial sobre a pele e a beleza sublime. Em 8 momentos, a sala, o som e os pratos contam uma transformação: a partir da partícula divina, atravessamos a criação desde o seu primeiro momento, entendendo como a vida se inicia na água, costurando a realidade até chegarmos à pele e à sua beleza. Transitando pelo orgânico e pelo sintético, entendemos onde as partículas mais raras se encontram.",
     "nota": "Cada etapa é um <b>visual em loop</b>, disparado à mão por um técnico no iPad, no ritmo em que os pratos são servidos e degustados. As <b>transições</b> ligam uma etapa à outra: entram fortes e se resolvem dentro do loop da etapa seguinte. Paredes, piso e mesa formam <b>um único ambiente contínuo</b>, com o convidado no meio dele."
   },
   {
@@ -41,7 +41,7 @@ export const slides: Slide[] = [
         },
         "n": "1",
         "title": "Início - Introdução",
-        "desc": "Sala branca. A forma recebe os convidados, os leva à mesa e abre a noite.",
+        "desc": "Sala branca. A Forma recebe os convidados, os leva à mesa e abre a noite.",
         "transition": false
       },
       {
@@ -53,7 +53,7 @@ export const slides: Slide[] = [
         },
         "n": "2",
         "title": "O Despertar - Transição",
-        "desc": "A passagem mais rápida, pelo início da criação",
+        "desc": "A passagem mais rápida, pelo início da criação.",
         "transition": true
       },
       {
@@ -65,7 +65,7 @@ export const slides: Slide[] = [
         },
         "n": "3",
         "title": "Hidratação Molecular - Entrada",
-        "desc": "O liquido matriz se forma, gerando vida.",
+        "desc": "O líquido matriz se forma, gerando vida.",
         "transition": false
       },
       {
@@ -101,7 +101,7 @@ export const slides: Slide[] = [
         },
         "n": "6",
         "title": "Matéria Primária - Sobremesa",
-        "desc": "Ventos sopram, o ouro surge",
+        "desc": "Ventos sopram, o ouro surge.",
         "transition": false
       },
       {
@@ -113,7 +113,7 @@ export const slides: Slide[] = [
         },
         "n": "7",
         "title": "Partícula Rara - Transição",
-        "desc": "As partículas raras ganham corpo",
+        "desc": "As partículas raras ganham corpo.",
         "transition": true
       },
       {
@@ -336,10 +336,10 @@ export const slides: Slide[] = [
     "title": "Hidratação Molecular",
     "reino": "Água",
     "sub": "O elemento fluido",
-    "narr": "Da energia nasce a água, tudo se dissolve e se reconecta: ondas, movimento e profundidade. Começando na superfície e decantando até chegarmos no fundo o mar e suas partículas bioluminescentes.",
+    "narr": "Da energia nasce a água, e tudo se dissolve e se reconecta: ondas, movimento e profundidade. Começamos na superfície e decantamos até chegar ao fundo do mar e às suas partículas bioluminescentes.",
     "atm": {
       "label": "Atmosfera",
-      "html": "Branco perolado, Azuis profundos, prata, turquesa translúcido, com brilhos dourados da luz atravessando a água. Movimento fluido e contínuo, sensação de leveza."
+      "html": "Branco perolado, azuis profundos, prata, turquesa translúcido, com brilhos dourados da luz atravessando a água. Movimento fluido e contínuo, sensação de leveza."
     }
   },
   {
@@ -437,12 +437,12 @@ export const slides: Slide[] = [
     "rows": [
       {
         "label": "Som",
-        "html": "Água calma e ondas suaves na superfície. Na profundidade, sons subaquáticos junto com movimentação de liquido, pads etéreos.",
+        "html": "Água calma e ondas suaves na superfície. Na profundidade, sons subaquáticos, movimentação de líquido e pads etéreos.",
         "tiles": []
       },
       {
         "label": "Nos pratos",
-        "html": "<p><em>(sugestão)</em> reflexos líquidos, como se a mesa fosse a própria superfície da água, com gotas que caem e iniciam ondas concentricas, depois começam a se movimentar pelo espaço.</p>",
+        "html": "<p><em>(sugestão)</em> reflexos líquidos, como se a mesa fosse a própria superfície da água, com gotas que caem e formam ondas concêntricas, que depois começam a se movimentar pelo espaço.</p>",
         "tiles": []
       }
     ]
@@ -505,7 +505,7 @@ export const slides: Slide[] = [
     },
     "num": "01",
     "title": "Pele como Paisagem",
-    "html": "Macro de textura de pele hidratada, formando um landscapes: poros, linhas e veias viram vales e montanhas.",
+    "html": "Macro de textura de pele hidratada, formando um landscape: poros, linhas e veias viram vales e montanhas.",
     "tiles": [
       {
         "kind": "video",
@@ -732,7 +732,7 @@ export const slides: Slide[] = [
     "fase": "Sobremesa",
     "title": "Matéria Primária",
     "reino": "Mineral, ouro e partículas",
-    "sub": "A matéria se solidifica — e depois, brilha",
+    "sub": "A matéria se solidifica — e depois brilha",
     "narr": "Do reino mineral nasce a jóia. A pele termina o ciclo: começou áspera como pedra, foi hidratada pela água, e agora se revela brilhante e preciosa — cuidada, como jóia.",
     "atm": {
       "label": "Atmosfera",
@@ -835,7 +835,7 @@ export const slides: Slide[] = [
     "rows": [
       {
         "label": "Som",
-        "html": "Vento de deserto, grãos de areia deslizando, percussão orgânica sutil de pedras. Na segunda parte entram frequências graves e puras que \"desenham\" as mandalas.",
+        "html": "Vento de deserto, grãos de areia deslizando, percussão orgânica sutil de pedras. Na segunda parte entram frequências graves e puras que “desenham” as mandalas.",
         "tiles": []
       },
       {
@@ -856,7 +856,7 @@ export const slides: Slide[] = [
       "secao": "Transição"
     },
     "num": "",
-    "title": "Matéria Primária → Pele Como Jóia",
+    "title": "Matéria Primária → Pele como Jóia",
     "html": "A frequência sobe e as mandalas se contraem para o centro de cada prato. A areia inteira é puxada para dentro, e a sala escurece.",
     "tiles": [
       {
