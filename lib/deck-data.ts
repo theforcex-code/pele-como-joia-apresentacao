@@ -69,10 +69,10 @@ export const slides: Slide[] = [
       },
       {
         "media": {
-          "kind": "image",
-          "src": "/media/sobremesa-1-seda.jpg",
-          "r": 0.56,
-          "pos": "50% 40%"
+          "kind": "video",
+          "src": "/media/pele-paisagem-macro-1.mp4",
+          "poster": "/media/pele-paisagem-macro-1.jpg",
+          "r": 1.7985
         },
         "n": "4",
         "title": "Pele Sedosa - Prato Principal",
@@ -493,9 +493,10 @@ export const slides: Slide[] = [
     "id": "pele-sedosa",
     "dark": false,
     "media": {
-      "kind": "image",
-      "src": "/media/sobremesa-1-seda.jpg",
-      "r": 0.56
+      "kind": "video",
+      "src": "/media/pele-paisagem-macro-1.mp4",
+      "poster": "/media/pele-paisagem-macro-1.jpg",
+      "r": 1.7985
     },
     "etapa": "Etapa 4 de 8",
     "fase": "Prato Principal",
@@ -506,7 +507,8 @@ export const slides: Slide[] = [
     "atm": {
       "label": "Atmosfera",
       "html": "Tons de pele — bege, terracota, rosa dourado; textura orgânica vista de perto, como paisagens; movimento sutil, quase uma respiração."
-    }
+    },
+    "crop": 1
   },
   {
     "type": "item",
@@ -528,9 +530,16 @@ export const slides: Slide[] = [
         "poster": "/media/transicao-materia-primaria.jpg",
         "r": 0.6667,
         "label": "transicao-materia-primaria"
+      },
+      {
+        "kind": "video",
+        "src": "/media/pele-sedosa-duna.mp4",
+        "poster": "/media/pele-sedosa-duna.jpg",
+        "r": 1.7881,
+        "label": "pele-sedosa-duna"
       }
     ],
-    "layout": "side"
+    "layout": "stack"
   },
   {
     "type": "som",
