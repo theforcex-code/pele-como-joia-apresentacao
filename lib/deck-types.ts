@@ -4,6 +4,8 @@ export type Media = {
   src: string;
   poster?: string;
   r: number;
+  /** peso na linha: 1 = altura cheia, 0.6 = 60% da altura do maior. Padrão 1. */
+  k?: number;
   pos?: string;
   label?: string;
 };
@@ -34,6 +36,8 @@ export type Slide =
       id: string;
       dark: boolean;
       media: Media;
+      /** proporção de exibição da mídia (recorte por object-fit); padrão: a do arquivo, no máximo 0,8. */
+      crop?: number;
       etapa: string;
       fase: string;
       title: string;
@@ -54,6 +58,15 @@ export type Slide =
       tiles: Media[];
       /** side: mídia ao lado do texto; stack: mídia embaixo, na largura toda. */
       layout: "side" | "stack";
+    }
+  | {
+      /** Board só de mídia: os quadros ocupam o slide inteiro, sem cabeçalho nem texto. */
+      type: "board";
+      id: string;
+      dark: boolean;
+      /** full: sem a margem do slide, a mídia ocupa a altura toda. */
+      full?: boolean;
+      tiles: Media[];
     }
   | {
       type: "som";

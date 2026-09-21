@@ -7,9 +7,9 @@ export const slides: Slide[] = [
     "id": "capa",
     "media": {
       "kind": "video",
-      "src": "/media/capa-cromo.mp4",
-      "poster": "/media/capa-cromo.jpg",
-      "r": 1.7778
+      "src": "/media/capa-forma-branca.mp4",
+      "poster": "/media/capa-forma-branca.jpg",
+      "r": 1.7918
     },
     "kicker": "Pele como jóia",
     "lines": [
@@ -34,9 +34,9 @@ export const slides: Slide[] = [
       {
         "media": {
           "kind": "video",
-          "src": "/media/capa-cromo.mp4",
-          "poster": "/media/capa-cromo.jpg",
-          "r": 1.7778
+          "src": "/media/capa-forma-branca.mp4",
+          "poster": "/media/capa-forma-branca.jpg",
+          "r": 1.7918
         },
         "n": "1",
         "title": "Início - Introdução",
@@ -46,8 +46,8 @@ export const slides: Slide[] = [
       {
         "media": {
           "kind": "video",
-          "src": "/media/bb-8-estrelas.mp4",
-          "poster": "/media/bb-8-estrelas.jpg",
+          "src": "/media/bb-3-cupula.mp4",
+          "poster": "/media/bb-3-cupula.jpg",
           "r": 0.5625
         },
         "n": "2",
@@ -126,6 +126,18 @@ export const slides: Slide[] = [
         "title": "A pele como uma jóia - Final",
         "desc": "Cristais na mesa quebram a luz em cores.",
         "transition": false
+      },
+      {
+        "media": {
+          "kind": "video",
+          "src": "/media/capa-forma-branca.mp4",
+          "poster": "/media/capa-forma-branca.jpg",
+          "r": 1.7918
+        },
+        "n": "",
+        "title": "Retorno à Forma",
+        "desc": "A Forma volta ao centro e fecha o ciclo da noite.",
+        "transition": false
       }
     ]
   },
@@ -135,9 +147,9 @@ export const slides: Slide[] = [
     "dark": false,
     "media": {
       "kind": "video",
-      "src": "/media/capa-cromo.mp4",
-      "poster": "/media/capa-cromo.jpg",
-      "r": 1.7778
+      "src": "/media/capa-forma-branca.mp4",
+      "poster": "/media/capa-forma-branca.jpg",
+      "r": 1.7918
     },
     "etapa": "Etapa 1 de 8",
     "fase": "",
@@ -244,11 +256,11 @@ export const slides: Slide[] = [
   {
     "type": "opener",
     "id": "despertar",
-    "dark": true,
+    "dark": false,
     "media": {
       "kind": "video",
-      "src": "/media/bb-8-estrelas.mp4",
-      "poster": "/media/bb-8-estrelas.jpg",
+      "src": "/media/bb-3-cupula.mp4",
+      "poster": "/media/bb-3-cupula.jpg",
       "r": 0.5625
     },
     "etapa": "Etapa 2 de 8",
@@ -260,28 +272,20 @@ export const slides: Slide[] = [
     "atm": {
       "label": "Atmosfera",
       "html": "Preto e branco, só luz e sombra. Movimentos matemáticos, precisos, repetidos e acelerados. Formas surgem e somem em segundos, e uma vira a outra sem parar."
-    }
+    },
+    "crop": 1
   },
   {
-    "type": "item",
+    "type": "board",
     "id": "despertar-sequencia",
-    "dark": true,
-    "variant": "seq",
-    "hd": {
-      "fase": "Transição",
-      "nome": "O Despertar",
-      "secao": "Sequência do loop"
-    },
-    "num": "",
-    "title": "Big Bang",
-    "html": "Uma explosão de filamentos de luz branca rasga o preto e se espalha em ondas radiais por paredes, piso e mesa ao mesmo tempo.",
+    "dark": false,
     "tiles": [
       {
         "kind": "video",
-        "src": "/media/bb-3-cupula.mp4",
-        "poster": "/media/bb-3-cupula.jpg",
+        "src": "/media/bb-8-estrelas.mp4",
+        "poster": "/media/bb-8-estrelas.jpg",
         "r": 0.5625,
-        "label": "bb-3-cupula"
+        "label": "bb-8-estrelas"
       },
       {
         "kind": "video",
@@ -289,24 +293,7 @@ export const slides: Slide[] = [
         "poster": "/media/bb-7-explosao.jpg",
         "r": 0.5625,
         "label": "bb-7-explosao"
-      }
-    ],
-    "layout": "side"
-  },
-  {
-    "type": "item",
-    "id": "despertar-sequencia-2",
-    "dark": true,
-    "variant": "seq",
-    "hd": {
-      "fase": "Transição",
-      "nome": "O Despertar",
-      "secao": "Sequência do loop"
-    },
-    "num": "01",
-    "title": "Foco na Energia",
-    "html": "A explosão se contrai num núcleo pulsante de luz branca, cercado por anéis e partículas que orbitam em alta velocidade. Na mesa, o núcleo pulsa bem no centro.",
-    "tiles": [
+      },
       {
         "kind": "video",
         "src": "/media/foco-energia-1.mp4",
@@ -321,13 +308,12 @@ export const slides: Slide[] = [
         "r": 1.0,
         "label": "foco-energia-2"
       }
-    ],
-    "layout": "side"
+    ]
   },
   {
     "type": "som",
     "id": "despertar-som",
-    "dark": true,
+    "dark": false,
     "hd": {
       "fase": "Transição",
       "nome": "O Despertar",
@@ -403,7 +389,7 @@ export const slides: Slide[] = [
         "label": "agua-10-esfera"
       }
     ],
-    "layout": "side"
+    "layout": "stack"
   },
   {
     "type": "item",
@@ -432,9 +418,29 @@ export const slides: Slide[] = [
         "poster": "/media/bio-2-profundidade.jpg",
         "r": 0.5625,
         "label": "bio-2-profundidade"
+      },
+      {
+        "kind": "video",
+        "src": "/media/bio-3-profundidade.mp4",
+        "poster": "/media/bio-3-profundidade.jpg",
+        "r": 1.0,
+        "label": "bio-3-profundidade"
+      },
+      {
+        "kind": "video",
+        "src": "/media/bio-4-profundidade.mp4",
+        "poster": "/media/bio-4-profundidade.jpg",
+        "r": 0.5625,
+        "label": "bio-4-profundidade"
+      },
+      {
+        "kind": "image",
+        "src": "/media/bio-5-profundidade.jpg",
+        "r": 1.5,
+        "label": "bio-5-profundidade"
       }
     ],
-    "layout": "side"
+    "layout": "stack"
   },
   {
     "type": "som",
@@ -454,15 +460,7 @@ export const slides: Slide[] = [
       {
         "label": "Nos pratos",
         "html": "<p><em>(sugestão)</em> reflexos líquidos, como se o prato fosse a própria superfície da água, com uma gota que cai e abre ondas concêntricas.</p>",
-        "tiles": [
-          {
-            "kind": "video",
-            "src": "/media/pratos-materia-gota.mp4",
-            "poster": "/media/pratos-materia-gota.jpg",
-            "r": 1.0,
-            "label": "pratos-materia-gota"
-          }
-        ]
+        "tiles": []
       }
     ]
   },
@@ -482,10 +480,10 @@ export const slides: Slide[] = [
     "tiles": [
       {
         "kind": "video",
-        "src": "/media/transicao-3-pele.mp4",
-        "poster": "/media/transicao-3-pele.jpg",
+        "src": "/media/transicao-3-pele-clara.mp4",
+        "poster": "/media/transicao-3-pele-clara.jpg",
         "r": 0.5625,
-        "label": "transicao-3-pele"
+        "label": "transicao-3-pele-clara"
       }
     ],
     "layout": "side"
@@ -710,6 +708,13 @@ export const slides: Slide[] = [
         "src": "/media/cristais-2-marmore-dourado.jpg",
         "r": 0.5,
         "label": "cristais-2-marmore-dourado"
+      },
+      {
+        "kind": "video",
+        "src": "/media/transicao-5-poeira-ouro.mp4",
+        "poster": "/media/transicao-5-poeira-ouro.jpg",
+        "r": 0.5625,
+        "label": "transicao-5-poeira-ouro"
       }
     ],
     "layout": "side"
@@ -719,9 +724,10 @@ export const slides: Slide[] = [
     "id": "materia-primaria",
     "dark": false,
     "media": {
-      "kind": "image",
-      "src": "/media/entrada-1-areia-dourada.jpg",
-      "r": 0.6667
+      "kind": "video",
+      "src": "/media/materia-veu-ambar.mp4",
+      "poster": "/media/materia-veu-ambar.jpg",
+      "r": 0.5625
     },
     "etapa": "Etapa 6 de 8",
     "fase": "Sobremesa",
@@ -765,6 +771,18 @@ export const slides: Slide[] = [
         "src": "/media/dunas-3-tecido-dourado.jpg",
         "r": 0.6661,
         "label": "dunas-3-tecido-dourado"
+      },
+      {
+        "kind": "image",
+        "src": "/media/dunas-4-cascata-ouro.jpg",
+        "r": 0.8133,
+        "label": "dunas-4-cascata-ouro"
+      },
+      {
+        "kind": "image",
+        "src": "/media/materia-fluido-ouro.jpg",
+        "r": 0.5625,
+        "label": "materia-fluido-ouro"
       }
     ],
     "layout": "stack"
@@ -786,22 +804,22 @@ export const slides: Slide[] = [
       {
         "kind": "image",
         "src": "/media/entrada-4-mao-na-areia.jpg",
-        "r": 0.5605,
+        "r": 0.5607,
         "label": "entrada-4-mao-na-areia"
       },
       {
         "kind": "video",
-        "src": "/media/pratos-2-mandala.mp4",
-        "poster": "/media/pratos-2-mandala.jpg",
+        "src": "/media/pratos-2-mandala-ouro.mp4",
+        "poster": "/media/pratos-2-mandala-ouro.jpg",
         "r": 0.5625,
-        "label": "pratos-2-mandala"
+        "label": "pratos-2-mandala-ouro"
       },
       {
         "kind": "video",
-        "src": "/media/pratos-4-mandala-prato.mp4",
-        "poster": "/media/pratos-4-mandala-prato.jpg",
+        "src": "/media/pratos-4-mandala-prato-ouro.mp4",
+        "poster": "/media/pratos-4-mandala-prato-ouro.jpg",
         "r": 1.0,
-        "label": "pratos-4-mandala-prato"
+        "label": "pratos-4-mandala-prato-ouro"
       }
     ],
     "layout": "stack"
@@ -891,60 +909,27 @@ export const slides: Slide[] = [
         "src": "/media/cristais-1-mosaico-cor.jpg",
         "r": 0.625,
         "label": "cristais-1-mosaico-cor"
-      }
-    ],
-    "layout": "side"
-  },
-  {
-    "type": "item",
-    "id": "joias-sequencia-2",
-    "dark": false,
-    "variant": "seq",
-    "hd": {
-      "fase": "Final",
-      "nome": "A pele como uma jóia",
-      "secao": "Sequência do loop"
-    },
-    "num": "02",
-    "title": "Luz em Cor",
-    "html": "As facetas quebram a luz em cores que correm pela sala e atravessam a mesa, os copos e os pratos. É o momento mais colorido da noite: a pele, enfim, como jóia.",
-    "tiles": [
-      {
-        "kind": "image",
-        "src": "/media/final-1-mesa.jpg",
-        "r": 0.6642,
-        "label": "final-1-mesa"
-      }
-    ],
-    "layout": "side"
-  },
-  {
-    "type": "item",
-    "id": "joias-sequencia-3",
-    "dark": false,
-    "variant": "seq",
-    "hd": {
-      "fase": "Final",
-      "nome": "A pele como uma jóia",
-      "secao": "Sequência do loop"
-    },
-    "num": "03",
-    "title": "Retorno à Forma",
-    "html": "Os cristais se desfazem devagar. As facetas se reduzem a pequenas esferas de luz, que se afastam da mesa, sobem e se fundem de volta na Forma central do Início. Sem pico e sem pressa, a sala volta ao branco contínuo e o ciclo se fecha.",
-    "tiles": [
-      {
-        "kind": "video",
-        "src": "/media/final-3-luz.mp4",
-        "poster": "/media/final-3-luz.jpg",
-        "r": 0.6032,
-        "label": "final-3-luz"
       },
       {
         "kind": "video",
-        "src": "/media/capa-cromo.mp4",
-        "poster": "/media/capa-cromo.jpg",
-        "r": 1.7778,
-        "label": "capa-cromo"
+        "src": "/media/cristais-3-facetas.mp4",
+        "poster": "/media/cristais-3-facetas.jpg",
+        "r": 0.5629,
+        "label": "cristais-3-facetas"
+      },
+      {
+        "kind": "video",
+        "src": "/media/final-6-diamante-po.mp4",
+        "poster": "/media/final-6-diamante-po.jpg",
+        "r": 1.7985,
+        "label": "final-6-diamante-po"
+      },
+      {
+        "kind": "video",
+        "src": "/media/final-5-dispersao.mp4",
+        "poster": "/media/final-5-dispersao.jpg",
+        "r": 0.5625,
+        "label": "final-5-dispersao"
       }
     ],
     "layout": "stack"
@@ -961,12 +946,53 @@ export const slides: Slide[] = [
     "rows": [
       {
         "label": "Som",
-        "html": "Fricção mineral, cristais tilintando, drone grave e batidas tectônicas quase sísmicas. Tudo se dissolve de volta no white noise e no tom grave do Início (528 Hz). A voz da Forma pode voltar para uma última frase de despedida.",
+        "html": "Fricção mineral, cristais tilintando, drone grave e batidas tectônicas quase sísmicas.",
         "tiles": []
       },
       {
         "label": "Nos pratos",
         "html": "Reflexos de cristal e luz colorida, que terminam em luz branca, ecoando o início.",
+        "tiles": []
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "id": "joias-sequencia-3",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Final",
+      "nome": "A pele como uma jóia",
+      "secao": "Sequência do loop"
+    },
+    "num": "02",
+    "title": "Retorno à Forma",
+    "html": "Os cristais se desfazem devagar. As facetas se reduzem a pequenas esferas de luz, que se afastam da mesa, sobem e se fundem de volta na Forma central do Início. Sem pico e sem pressa, a sala volta ao branco contínuo e o ciclo se fecha.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/capa-forma-branca.mp4",
+        "poster": "/media/capa-forma-branca.jpg",
+        "r": 1.7918,
+        "label": "capa-forma-branca"
+      }
+    ],
+    "layout": "stack"
+  },
+  {
+    "type": "som",
+    "id": "joias-som-retorno",
+    "dark": false,
+    "hd": {
+      "fase": "Final",
+      "nome": "Retorno à Forma",
+      "secao": "Som"
+    },
+    "rows": [
+      {
+        "label": "Som",
+        "html": "O mesmo som da abertura: white noise constante e voz da Forma em eco e reverb, sem batida. Um tom puro e grave de fundo (sugestão: 528 Hz). Tudo se dissolve de volta nele. A voz da Forma pode voltar para uma última frase de despedida.",
         "tiles": []
       }
     ]
