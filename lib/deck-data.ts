@@ -23,7 +23,8 @@ export const slides: Slide[] = [
     "id": "conceito",
     "kicker": "A Forma e a Partícula",
     "title": "Conceito estrutural",
-    "html": "Cada etapa é um <b>visual em loop</b>, disparado à mão por um técnico no iPad, no ritmo em que os pratos são servidos e degustados. As <b>transições</b> ligam uma etapa à outra: entram fortes e se resolvem dentro do loop da etapa seguinte. Paredes, piso e mesa formam <b>um único ambiente contínuo</b>, com o convidado no meio dele."
+    "html": "O despertar da matéria é um convite à uma experiência gastronômica multissensorial sobre a pele e a beleza sublime. Em 8 momentos, a sala, o som e os pratos contam uma transformação: a partir da partícula divina, atravessamos a criação desde o seu primeiro momento, entendendo como a vida se inicia na água, costurando a realidade até chegarmos na pele e sua beleza. Transitando pelo orgânico e o sintético, entendemos onde as partículas mais raras se encontram.",
+    "nota": "Cada etapa é um <b>visual em loop</b>, disparado à mão por um técnico no iPad, no ritmo em que os pratos são servidos e degustados. As <b>transições</b> ligam uma etapa à outra: entram fortes e se resolvem dentro do loop da etapa seguinte. Paredes, piso e mesa formam <b>um único ambiente contínuo</b>, com o convidado no meio dele."
   },
   {
     "type": "mapa",
@@ -52,7 +53,7 @@ export const slides: Slide[] = [
         },
         "n": "2",
         "title": "O Despertar - Transição",
-        "desc": "A passagem mais rápida, em preto e branco.",
+        "desc": "A passagem mais rápida, pelo início da criação",
         "transition": true
       },
       {
@@ -64,7 +65,7 @@ export const slides: Slide[] = [
         },
         "n": "3",
         "title": "Hidratação Molecular - Entrada",
-        "desc": "Formas orgânicas, água e ácido hialurônico.",
+        "desc": "O liquido matriz se forma, gerando vida.",
         "transition": false
       },
       {
@@ -76,7 +77,7 @@ export const slides: Slide[] = [
         },
         "n": "4",
         "title": "Pele Sedosa - Prato Principal",
-        "desc": "A pele aparece, com textura de seda.",
+        "desc": "A pele aparece, suave como seda.",
         "transition": false
       },
       {
@@ -88,31 +89,31 @@ export const slides: Slide[] = [
         },
         "n": "5",
         "title": "Beleza Natural - Prato Principal",
-        "desc": "A matéria vira dobras de seda.",
+        "desc": "A matéria se transforma, a natureza se mostra.",
         "transition": true
       },
       {
         "media": {
-          "kind": "image",
-          "src": "/media/entrada-1-areia-dourada.jpg",
-          "r": 0.6667,
-          "pos": "50% 72%"
+          "kind": "video",
+          "src": "/media/materia-veu-ambar.mp4",
+          "poster": "/media/materia-veu-ambar.jpg",
+          "r": 0.5625
         },
         "n": "6",
         "title": "Matéria Primária - Sobremesa",
-        "desc": "Crosta, pedras e areia dourada até os pratos.",
+        "desc": "Ventos sopram, o ouro surge",
         "transition": false
       },
       {
         "media": {
-          "kind": "image",
-          "src": "/media/agua-2-cascata.jpg",
-          "r": 0.7503,
-          "pos": "42% 55%"
+          "kind": "video",
+          "src": "/media/particula-rara-cascata-ouro.mp4",
+          "poster": "/media/particula-rara-cascata-ouro.jpg",
+          "r": 1.7704
         },
         "n": "7",
         "title": "Partícula Rara - Transição",
-        "desc": "As partículas ganham corpo.",
+        "desc": "As partículas raras ganham corpo",
         "transition": true
       },
       {
@@ -124,19 +125,7 @@ export const slides: Slide[] = [
         },
         "n": "8",
         "title": "A pele como uma jóia - Final",
-        "desc": "Cristais na mesa quebram a luz em cores.",
-        "transition": false
-      },
-      {
-        "media": {
-          "kind": "video",
-          "src": "/media/capa-forma-branca.mp4",
-          "poster": "/media/capa-forma-branca.jpg",
-          "r": 1.7918
-        },
-        "n": "",
-        "title": "Retorno à Forma",
-        "desc": "A Forma volta ao centro e fecha o ciclo da noite.",
+        "desc": "Diamantes na mesa quebram a luz em cores.",
         "transition": false
       }
     ]
@@ -152,7 +141,7 @@ export const slides: Slide[] = [
       "r": 1.7918
     },
     "etapa": "Etapa 1 de 8",
-    "fase": "",
+    "fase": "Introdução",
     "title": "Início",
     "reino": "Gênese · A Forma",
     "sub": "A sala respira",
@@ -168,13 +157,13 @@ export const slides: Slide[] = [
     "dark": false,
     "variant": "seq",
     "hd": {
-      "fase": "",
+      "fase": "Introdução",
       "nome": "Início",
       "secao": "Sequência do loop"
     },
     "num": "01",
     "title": "Cenário Branco Voice Over",
-    "html": "Paredes e piso formam um branco contínuo, sem canto nem horizonte, como uma galeria infinita. O fundo se move devagar, numa textura orgânica quase invisível, e a sala parece respirar. No piso, discos de luz suaves marcam o caminho até os lugares. Uma voz etérea chama os convidados a se sentar. No centro da parede principal está a Forma, um anel de cromo líquido que pulsa e se distorce a cada palavra. A voz se desdobra em refrações iridescentes, o único vestígio de cor.",
+    "html": "Paredes e piso formam um branco contínuo, sem canto nem horizonte, como uma galeria infinita. O fundo se move devagar, numa textura orgânica quase invisível, e a sala parece respirar. No piso, discos de luz suaves marcam o caminho até os lugares. Uma voz etérea chama os convidados a se sentar. No centro da parede principal está a Forma, um anel de cromo líquido que pulsa e se distorce a cada palavra. A voz se desdobra em ondulações sobre a escultura viva.",
     "tiles": [
       {
         "kind": "video",
@@ -210,7 +199,7 @@ export const slides: Slide[] = [
     "id": "inicio-som",
     "dark": false,
     "hd": {
-      "fase": "",
+      "fase": "Introdução",
       "nome": "Início",
       "secao": "Som"
     },
@@ -228,13 +217,13 @@ export const slides: Slide[] = [
     "dark": true,
     "variant": "trans",
     "hd": {
-      "fase": "",
+      "fase": "Introdução",
       "nome": "Início",
       "secao": "Transição"
     },
     "num": "",
-    "title": "Transição 1 → O Despertar",
-    "html": "Esferas “átomos” brancos se juntam no centro, carregando e explodindo no Big Bang.",
+    "title": "Início → O Despertar",
+    "html": "Energias começam a carregar nossa escultura viva, até explodir como o Big Bang.",
     "tiles": [
       {
         "kind": "video",
@@ -268,7 +257,7 @@ export const slides: Slide[] = [
     "title": "O Despertar",
     "reino": "Big Bang · Era das partículas",
     "sub": "A energia vira universo",
-    "narr": "A passagem mais rápida e intensa da noite, que só acontece uma vez. Toda a luz da Forma explode e, do nada, nasce um cosmos: energia, estrelas e as primeiras ligações entre elas.",
+    "narr": "A passagem mais rápida e intensa da noite, que só acontece uma vez. Toda a luz da Forma explode, e rapidamente nasce um cosmos: energia, estrelas e as primeiras ligações entre elas.",
     "atm": {
       "label": "Atmosfera",
       "html": "Preto e branco, só luz e sombra. Movimentos matemáticos, precisos, repetidos e acelerados. Formas surgem e somem em segundos, e uma vira a outra sem parar."
@@ -345,12 +334,12 @@ export const slides: Slide[] = [
     "etapa": "Etapa 3 de 8",
     "fase": "Entrada",
     "title": "Hidratação Molecular",
-    "reino": "Água · Ácido hialurônico",
+    "reino": "Água",
     "sub": "O elemento fluido",
-    "narr": "Da energia nasce a água, e com ela o ácido hialurônico. Tudo se dissolve e se reconecta: ondas, gel e profundidade. A cor entra na noite pela primeira vez, e com ela a vida, ainda sem forma.",
+    "narr": "Da energia nasce a água, tudo se dissolve e se reconecta: ondas, movimento e profundidade. Começando na superfície e decantando até chegarmos no fundo o mar e suas partículas bioluminescentes.",
     "atm": {
       "label": "Atmosfera",
-      "html": "Azuis profundos, prata, turquesa translúcido, com brilhos dourados da luz atravessando a água. Movimento fluido e contínuo, sensação de leveza."
+      "html": "Branco perolado, Azuis profundos, prata, turquesa translúcido, com brilhos dourados da luz atravessando a água. Movimento fluido e contínuo, sensação de leveza."
     }
   },
   {
@@ -432,12 +421,6 @@ export const slides: Slide[] = [
         "poster": "/media/bio-4-profundidade.jpg",
         "r": 0.5625,
         "label": "bio-4-profundidade"
-      },
-      {
-        "kind": "image",
-        "src": "/media/bio-5-profundidade.jpg",
-        "r": 1.5,
-        "label": "bio-5-profundidade"
       }
     ],
     "layout": "stack"
@@ -454,12 +437,12 @@ export const slides: Slide[] = [
     "rows": [
       {
         "label": "Som",
-        "html": "Água calma e ondas suaves na superfície. Na profundidade, sons subaquáticos, canto de baleia distante e pads etéreos.",
+        "html": "Água calma e ondas suaves na superfície. Na profundidade, sons subaquáticos junto com movimentação de liquido, pads etéreos.",
         "tiles": []
       },
       {
         "label": "Nos pratos",
-        "html": "<p><em>(sugestão)</em> reflexos líquidos, como se o prato fosse a própria superfície da água, com uma gota que cai e abre ondas concêntricas.</p>",
+        "html": "<p><em>(sugestão)</em> reflexos líquidos, como se a mesa fosse a própria superfície da água, com gotas que caem e iniciam ondas concentricas, depois começam a se movimentar pelo espaço.</p>",
         "tiles": []
       }
     ]
@@ -475,7 +458,7 @@ export const slides: Slide[] = [
       "secao": "Transição"
     },
     "num": "",
-    "title": "Transição 3 → Pele Sedosa",
+    "title": "Hidratação Molecular → Pele Sedosa",
     "html": "As partículas bioluminescentes da profundeza começam a surgir na projeção e se conectam entre si, iluminando a sala inteira. A câmera dá um zoom na própria partícula de vida — e é de dentro dela que nasce, em construção progressiva, o primeiro landscape de textura de pele. A água não desaparece: ela <em>hidrata</em> o que nasce a seguir.",
     "tiles": [
       {
@@ -522,7 +505,7 @@ export const slides: Slide[] = [
     },
     "num": "01",
     "title": "Pele como Paisagem",
-    "html": "Macro de textura de pele bem hidratada (herança direta do Reino da Água), formando um landscape: poros, linhas e veias viram vales e montanhas.",
+    "html": "Macro de textura de pele hidratada, formando um landscapes: poros, linhas e veias viram vales e montanhas.",
     "tiles": [
       {
         "kind": "video",
@@ -535,7 +518,7 @@ export const slides: Slide[] = [
         "kind": "video",
         "src": "/media/pele-sedosa-duna.mp4",
         "poster": "/media/pele-sedosa-duna.jpg",
-        "r": 1.7881,
+        "r": 1.794,
         "label": "pele-sedosa-duna"
       }
     ],
@@ -574,15 +557,15 @@ export const slides: Slide[] = [
       "secao": "Transição"
     },
     "num": "",
-    "title": "Transição 4 → Beleza Natural",
+    "title": "Pele Sedosa → Beleza Natural",
     "html": "A respiração da pele se aprofunda, até que a superfície começa a ondular. A pele se solta do chão como um tecido e ganha vento. O relevo deixa de ser terreno e vira dobra.",
     "tiles": [
       {
         "kind": "video",
-        "src": "/media/pele-em-movimento.mp4",
-        "poster": "/media/pele-em-movimento.jpg",
-        "r": 0.7632,
-        "label": "pele - transição"
+        "src": "/media/pele-petala-gota.mp4",
+        "poster": "/media/pele-petala-gota.jpg",
+        "r": 1.7985,
+        "label": "pele-petala-gota"
       }
     ],
     "layout": "side"
@@ -593,9 +576,9 @@ export const slides: Slide[] = [
     "dark": false,
     "media": {
       "kind": "video",
-      "src": "/media/vento-e-ondas-invertido.mp4",
-      "poster": "/media/vento-e-ondas-invertido.jpg",
-      "r": 0.5625
+      "src": "/media/beleza-flor-petalas.mp4",
+      "poster": "/media/beleza-flor-petalas.jpg",
+      "r": 1.7985
     },
     "etapa": "Etapa 5 de 8",
     "fase": "Prato Principal",
@@ -624,20 +607,27 @@ export const slides: Slide[] = [
     "tiles": [
       {
         "kind": "video",
-        "src": "/media/pele-em-movimento.mp4",
-        "poster": "/media/pele-em-movimento.jpg",
-        "r": 0.7632,
-        "label": "pele - transição"
-      },
-      {
-        "kind": "video",
         "src": "/media/pele-como-flor-2.mp4",
         "poster": "/media/pele-como-flor-2.jpg",
         "r": 0.7632,
         "label": "pele-como-flor-2"
+      },
+      {
+        "kind": "video",
+        "src": "/media/pele-flor-branca.mp4",
+        "poster": "/media/pele-flor-branca.jpg",
+        "r": 0.7632,
+        "label": "pele-flor-branca"
+      },
+      {
+        "kind": "video",
+        "src": "/media/pele-em-movimento.mp4",
+        "poster": "/media/pele-em-movimento.jpg",
+        "r": 0.7632,
+        "label": "pele-em-movimento"
       }
     ],
-    "layout": "side"
+    "layout": "stack"
   },
   {
     "type": "item",
@@ -709,7 +699,7 @@ export const slides: Slide[] = [
       "secao": "Transição"
     },
     "num": "",
-    "title": "Transição 5 → Matéria Primária",
+    "title": "Beleza Natural → Matéria Primária",
     "html": "Sobre a pele surge uma rede de esferas de luz, como constelações ou redes neurais, pontos que ligam pessoa a pessoa na mesa. É o clímax emocional da noite. Aos poucos, essas esferas se soltam da paisagem e voltam a se comportar como moléculas soltas. O calor da pele se dessatura em tons terrosos, os tecidos secam e se desfazem em pó. O vivo se torna mineral.",
     "tiles": [
       {
@@ -866,14 +856,15 @@ export const slides: Slide[] = [
       "secao": "Transição"
     },
     "num": "",
-    "title": "Transição 6 → Partícula Rara",
+    "title": "Matéria Primária → Pele Como Jóia",
     "html": "A frequência sobe e as mandalas se contraem para o centro de cada prato. A areia inteira é puxada para dentro, e a sala escurece.",
     "tiles": [
       {
-        "kind": "image",
-        "src": "/media/agua-2-cascata.jpg",
-        "r": 0.7503,
-        "label": "agua-2-cascata"
+        "kind": "video",
+        "src": "/media/particula-rara-cascata-ouro.mp4",
+        "poster": "/media/particula-rara-cascata-ouro.jpg",
+        "r": 1.7704,
+        "label": "particula-rara-cascata-ouro"
       }
     ],
     "layout": "side"
@@ -910,7 +901,7 @@ export const slides: Slide[] = [
       "secao": "Sequência do loop"
     },
     "num": "01",
-    "title": "Formação de Cristais",
+    "title": "O Diamante Aparece",
     "html": "Cristalização lenta nas paredes, como quartzo ou geodo crescendo em câmera lenta; a areia dá lugar a facetas translúcidas que começam a quebrar a luz em cor.",
     "tiles": [
       {
@@ -1016,6 +1007,7 @@ export const slides: Slide[] = [
       "#",
       "Etapa do jantar",
       "Nome",
+      "Momentos",
       "Reino",
       "Cor dominante",
       "Elo de transição"
@@ -1031,6 +1023,7 @@ export const slides: Slide[] = [
           "1",
           "Introdução",
           "<b>Início</b>",
+          "2 momentos",
           "Gênese / Forma",
           "Branco, cromo",
           "Átomos se juntam no centro e explodem"
@@ -1046,6 +1039,7 @@ export const slides: Slide[] = [
           "2",
           "Transição",
           "<b>O Despertar</b>",
+          "—",
           "Big Bang",
           "Preto e branco",
           "Estrelas viram esferas e se fundem em gota"
@@ -1061,7 +1055,8 @@ export const slides: Slide[] = [
           "3",
           "Entrada",
           "<b>Hidratação Molecular</b>",
-          "Água / Ácido hialurônico",
+          "2 momentos",
+          "Água",
           "Azul, prata, turquesa",
           "Bioluminescência vira paisagem de pele"
         ]
@@ -1076,6 +1071,7 @@ export const slides: Slide[] = [
           "4",
           "Prato Principal",
           "<b>Pele Sedosa</b>",
+          "1 momento",
           "Humano",
           "Bege, terracota, rosa dourado",
           "A pele se solta como tecido"
@@ -1091,6 +1087,7 @@ export const slides: Slide[] = [
           "5",
           "Prato Principal",
           "<b>Beleza Natural</b>",
+          "2 momentos",
           "Humano",
           "Rosa dourado, marfim, pérola",
           "Constelação humana vira moléculas minerais"
@@ -1106,6 +1103,7 @@ export const slides: Slide[] = [
           "6",
           "Sobremesa",
           "<b>Matéria Primária</b>",
+          "2 momentos",
           "Mineral",
           "Terroso, ocre, dourado",
           "Mandalas se contraem ao centro"
@@ -1114,13 +1112,14 @@ export const slides: Slide[] = [
       {
         "thumb": {
           "kind": "image",
-          "src": "/media/agua-2-cascata.jpg",
-          "r": 0.7503
+          "src": "/media/particula-rara-cascata-ouro.jpg",
+          "r": 1.7704
         },
         "cells": [
           "7",
           "Transição",
           "<b>Partícula Rara</b>",
+          "—",
           "Mineral",
           "Grafite, pedra negra, luz branca",
           "A pedra se parte e liberta a luz"
@@ -1136,8 +1135,9 @@ export const slides: Slide[] = [
           "8",
           "Final",
           "<b>A pele como uma jóia</b>",
+          "2 momentos",
           "Jóia / Retorno",
-          "Cristal, arco-íris → branco",
+          "",
           "Cristais viram esferas e voltam à Forma"
         ]
       }

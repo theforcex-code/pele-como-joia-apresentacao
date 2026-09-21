@@ -98,6 +98,7 @@ function SlideView({ s, n }: { s: Slide; n: number }) {
             <OverviewHd kicker={s.kicker} title={s.title} />
             <div className="ct">
               <Html className="statement" html={s.html} />
+              {s.nota && <Html className="nota" html={s.nota} />}
             </div>
           </div>
         </Page>
@@ -155,7 +156,15 @@ function SlideView({ s, n }: { s: Slide; n: number }) {
       // A imagem da abertura fica na proporção dela; só as horizontais são recortadas num retrato (0,8).
       return (
         <Page slide={s} n={n} cls="opener" style={{ "--r": s.crop ?? Math.min(s.media.r, 0.8) }}>
-          <MediaEl m={s.media} className="media" />
+          {s.extra?.length ? (
+            <div className="media mediabox">
+              {[s.media, ...s.extra].map((m, i) => (
+                <MediaEl key={`${i}-${m.src}`} m={m} className="m" />
+              ))}
+            </div>
+          ) : (
+            <MediaEl m={s.media} className="media" />
+          )}
           <div className="in">
             <header className="hd">
               {s.fase && <span>{s.fase}</span>}
@@ -181,13 +190,17 @@ function SlideView({ s, n }: { s: Slide; n: number }) {
             <div className="ct">
               <div className={`item ${s.layout}`}>
                 <div className="txt">
-                  <h3 className="ttl">
-                    {s.num && <span className="num">{s.num}</span>}
-                    <Anim text={s.title} />
-                  </h3>
+                  {(s.num || s.title) && (
+                    <h3 className="ttl">
+                      {s.num && <span className="num">{s.num}</span>}
+                      <Anim text={s.title} />
+                    </h3>
+                  )}
                   <Html html={s.html} />
                 </div>
-                {s.tiles.length > 0 && <Tiles tiles={s.tiles} />}
+                {s.tiles.length > 0 && (
+                  <Tiles tiles={s.variant === "trans" ? s.tiles.map((t) => ({ ...t, r: 9 / 16, k: 1 })) : s.tiles} />
+                )}
               </div>
             </div>
           </div>

@@ -15,7 +15,11 @@ export type StageHeader = { fase: string; nome: string; secao: string };
 
 export type Slide =
   | { type: "cover"; id: string; media: Media; kicker: string; lines: string[]; sub: string }
-  | { type: "manifesto"; id: string; kicker: string; title: string; html: string }
+  | {
+      type: "manifesto"; id: string; kicker: string; title: string; html: string;
+      /** texto menor, abaixo do principal */
+      nota?: string;
+    }
   | {
       type: "conceito";
       id: string;
@@ -38,6 +42,8 @@ export type Slide =
       media: Media;
       /** proporção de exibição da mídia (recorte por object-fit); padrão: a do arquivo, no máximo 0,8. */
       crop?: number;
+      /** mídias extras: a abertura mostra media + extra lado a lado, na mesma caixa */
+      extra?: Media[];
       etapa: string;
       fase: string;
       title: string;
