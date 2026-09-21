@@ -14,6 +14,10 @@ npm run dev
 
 Abre em http://localhost:3000.
 
+No Windows, dá para pular os comandos: depois do clone, dê duplo clique em
+`abrir-localhost.bat`. Ele confere se o Node está instalado, roda o
+`npm install` na primeira vez, sobe o servidor e abre o navegador.
+
 O `node_modules` não vai pelo git, por isso o `npm install` é obrigatório na
 primeira vez. No Windows, clone numa pasta de caminho curto (por exemplo
 `C:\Projetos\`): o limite de 260 caracteres do sistema faz o clone falhar no
