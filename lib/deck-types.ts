@@ -63,7 +63,7 @@ export type Slide =
       html: string;
       tiles: Media[];
       /** side: mídia ao lado do texto; stack: mídia embaixo, na largura toda. */
-      layout: "side" | "stack";
+      layout: "side" | "stack" | "pano";
     }
   | {
       /** Board só de mídia: os quadros ocupam o slide inteiro, sem cabeçalho nem texto. */

@@ -382,6 +382,35 @@ export const slides: Slide[] = [
   },
   {
     "type": "item",
+    "id": "hidratacao-sequencia-panoramas",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Entrada",
+      "nome": "Hidratação Molecular",
+      "secao": "Sequência do loop"
+    },
+    "num": "01",
+    "title": "Superfície e Ondas",
+    "html": "",
+    "tiles": [
+      {
+        "kind": "image",
+        "src": "/media/agua-11-panorama-esferas.jpg",
+        "r": 5.5944,
+        "label": "agua-11-panorama-esferas"
+      },
+      {
+        "kind": "image",
+        "src": "/media/agua-12-panorama-gelo.jpg",
+        "r": 5.5944,
+        "label": "agua-12-panorama-gelo"
+      }
+    ],
+    "layout": "pano"
+  },
+  {
+    "type": "item",
     "id": "hidratacao-sequencia-2",
     "dark": false,
     "variant": "seq",

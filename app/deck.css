@@ -172,6 +172,11 @@ body {
 .item.stack { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); row-gap: calc(36 * var(--u)); }
 .item .txt p { font-size: calc(32 * var(--u)); line-height: 1.42; color: var(--soft); margin-top: calc(32 * var(--u)); }
 .item.stack .txt p { max-width: calc(1180 * var(--u)); }
+/* pano: panoramas muito largos, um embaixo do outro na largura toda, cada um na proporção dele */
+.item.pano { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); row-gap: calc(36 * var(--u)); }
+/* largura: a toda, ou a que faz a pilha caber na altura da área (proporções iguais: soma / n²) */
+.item.pano .tiles { flex-direction: column; width: min(100%, calc((100cqh - (var(--n) - 1) * 20 * var(--u)) * var(--sum) / (var(--n) * var(--n)))); }
+.item.pano .tiles .t { flex: 0 0 auto; width: 100%; aspect-ratio: var(--r); }
 
 /* numero da pagina: na faixa de margem abaixo da caixa de conteudo, nunca sobre a midia */
 .pg {
@@ -243,6 +248,9 @@ table.sum { width: 100%; border-collapse: separate; border-spacing: 0 calc(8 * v
   /* Início: coluna de texto mais estreita e mídia quase quadrada, para a Forma aparecer inteira */
   #inicio .media { width: calc(100% - (80 + 660 + 96 + 80) * var(--u)); }
   #inicio .in { right: calc(100% - (80 + 660) * var(--u)); }
+  /* pano deitado: os panoramas não esticam para preencher a altura, ficam inteiros, sem recorte */
+  .item.pano .tiles { height: auto; }
+  .item.pano .tiles .t { height: auto; aspect-ratio: var(--r); }
 }
 
 /* ------------------------------------------------------------ telas em pé (celular, painel estreito, monitor vertical) */
@@ -286,9 +294,9 @@ table.sum { width: 100%; border-collapse: separate; border-spacing: 0 calc(8 * v
   .atm { grid-template-columns: calc(170 * var(--u)) 1fr; font-size: calc(28 * var(--u)); padding: calc(24 * var(--u)) calc(28 * var(--u)); }
 
   /* item e transição: texto em cima, quadros numa linha embaixo */
-  .item, .item.side, .item.stack { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); row-gap: calc(48 * var(--u)); }
+  .item, .item.side, .item.stack, .item.pano { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); row-gap: calc(48 * var(--u)); }
   .item.side .tiles { margin-left: 0; }
-  .item .txt p, .item.stack .txt p { font-size: calc(34 * var(--u)); max-width: none; margin-top: calc(28 * var(--u)); }
+  .item .txt p, .item.stack .txt p, .item.pano .txt p { font-size: calc(34 * var(--u)); max-width: none; margin-top: calc(28 * var(--u)); }
 
   /* som e pratos: rótulo em cima do texto */
   .rows .r, .rows .r.has-media { grid-template-columns: minmax(0, 1fr); row-gap: calc(16 * var(--u)); font-size: calc(34 * var(--u)); padding-bottom: calc(48 * var(--u)); }
