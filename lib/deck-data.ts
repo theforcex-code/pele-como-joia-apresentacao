@@ -703,12 +703,6 @@ export const slides: Slide[] = [
     "html": "Sobre a pele surge uma rede de esferas de luz, como constelações ou redes neurais, pontos que ligam pessoa a pessoa na mesa. É o clímax emocional da noite. Aos poucos, essas esferas se soltam da paisagem e voltam a se comportar como moléculas soltas. O calor da pele se dessatura em tons terrosos, os tecidos secam e se desfazem em pó. O vivo se torna mineral.",
     "tiles": [
       {
-        "kind": "image",
-        "src": "/media/cristais-2-marmore-dourado.jpg",
-        "r": 0.5,
-        "label": "cristais-2-marmore-dourado"
-      },
-      {
         "kind": "video",
         "src": "/media/transicao-5-poeira-ouro.mp4",
         "poster": "/media/transicao-5-poeira-ouro.jpg",
