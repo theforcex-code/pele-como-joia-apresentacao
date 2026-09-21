@@ -107,9 +107,9 @@ export const slides: Slide[] = [
       {
         "media": {
           "kind": "video",
-          "src": "/media/particula-rara-cascata-ouro.mp4",
-          "poster": "/media/particula-rara-cascata-ouro.jpg",
-          "r": 1.7704
+          "src": "/media/dunas-video-3-poeira-dourada.mp4",
+          "poster": "/media/dunas-video-3-poeira-dourada.jpg",
+          "r": 0.8
         },
         "n": "7",
         "title": "Partícula Rara - Transição",
