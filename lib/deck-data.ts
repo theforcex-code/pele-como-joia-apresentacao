@@ -913,24 +913,17 @@ export const slides: Slide[] = [
     "tiles": [
       {
         "kind": "video",
-        "src": "/media/cristais-3-facetas.mp4",
-        "poster": "/media/cristais-3-facetas.jpg",
-        "r": 0.5629,
-        "label": "cristais-3-facetas"
+        "src": "/media/joias-video-1-anel-borboleta.mp4",
+        "poster": "/media/joias-video-1-anel-borboleta.jpg",
+        "r": 0.8,
+        "label": "joias-video-1-anel-borboleta"
       },
       {
         "kind": "video",
-        "src": "/media/final-6-diamante-po.mp4",
-        "poster": "/media/final-6-diamante-po.jpg",
-        "r": 1.7985,
-        "label": "final-6-diamante-po"
-      },
-      {
-        "kind": "video",
-        "src": "/media/final-5-dispersao.mp4",
-        "poster": "/media/final-5-dispersao.jpg",
-        "r": 0.5625,
-        "label": "final-5-dispersao"
+        "src": "/media/joias-video-2-anel-rubi.mp4",
+        "poster": "/media/joias-video-2-anel-rubi.jpg",
+        "r": 0.8,
+        "label": "joias-video-2-anel-rubi"
       }
     ],
     "layout": "stack"
