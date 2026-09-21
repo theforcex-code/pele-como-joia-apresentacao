@@ -888,6 +888,12 @@ export const slides: Slide[] = [
         "poster": "/media/final-4-diamante.jpg",
         "r": 0.5625,
         "label": "final-4-diamante"
+      },
+      {
+        "kind": "image",
+        "src": "/media/final-anel-rubi-diamantes.jpg",
+        "r": 0.7051,
+        "label": "final-anel-rubi-diamantes"
       }
     ],
     "layout": "side"
