@@ -31,7 +31,9 @@ export function MediaEl({ m, className }: { m: Media; className?: string }) {
 export function Tiles({ tiles }: { tiles: Media[] }) {
   // a soma pondera pelo peso: um quadro com k menor ocupa menos largura e menos altura
   const sum = tiles.reduce((acc, t) => acc + t.r * (t.k ?? 1), 0);
-  const style: CSSVars = { "--n": tiles.length, "--sum": sum.toFixed(4) };
+  // soma de 1/proporção: com os quadros empilhados, a altura total é largura x essa soma
+  const inv = tiles.reduce((acc, t) => acc + 1 / t.r, 0);
+  const style: CSSVars = { "--n": tiles.length, "--sum": sum.toFixed(4), "--inv": inv.toFixed(4) };
   return (
     <div className="area">
       <div className="tiles" data-n={tiles.length} style={style}>

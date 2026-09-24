@@ -174,8 +174,8 @@ body {
 .item.stack .txt p { max-width: calc(1180 * var(--u)); }
 /* pano: panoramas muito largos, um embaixo do outro na largura toda, cada um na proporção dele */
 .item.pano { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); row-gap: calc(36 * var(--u)); }
-/* largura: a toda, ou a que faz a pilha caber na altura da área (proporções iguais: soma / n²) */
-.item.pano .tiles { flex-direction: column; width: min(100%, calc((100cqh - (var(--n) - 1) * 20 * var(--u)) * var(--sum) / (var(--n) * var(--n)))); }
+/* largura: a toda, ou a que faz a pilha caber na altura da área (altura = largura x soma de 1/proporção) */
+.item.pano .tiles { flex-direction: column; width: min(100%, calc((100cqh - (var(--n) - 1) * 20 * var(--u)) / var(--inv))); }
 .item.pano .tiles .t { flex: 0 0 auto; width: 100%; aspect-ratio: var(--r); }
 
 /* numero da pagina: na faixa de margem abaixo da caixa de conteudo, nunca sobre a midia */

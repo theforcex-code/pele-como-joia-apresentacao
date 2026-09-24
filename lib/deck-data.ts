@@ -213,6 +213,41 @@ export const slides: Slide[] = [
   },
   {
     "type": "item",
+    "id": "couvert-origem",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Couvert",
+      "nome": "Origem",
+      "secao": "Sequência do loop"
+    },
+    "num": "01",
+    "title": "Gotas de Água",
+    "html": "Gotas de água se formando e expandindo.",
+    "tiles": [
+      {
+        "kind": "image",
+        "src": "/media/couvert-1-lago-esferas.jpg",
+        "r": 5.5866,
+        "label": "couvert-1-lago-esferas"
+      },
+      {
+        "kind": "image",
+        "src": "/media/couvert-3-agua-bolhas.jpg",
+        "r": 6.5147,
+        "label": "couvert-3-agua-bolhas"
+      },
+      {
+        "kind": "image",
+        "src": "/media/couvert-2-mesa-agua.jpg",
+        "r": 5.0251,
+        "label": "couvert-2-mesa-agua"
+      }
+    ],
+    "layout": "pano"
+  },
+  {
+    "type": "item",
     "id": "inicio-transicao",
     "dark": true,
     "variant": "trans",
