@@ -1,1149 +1,1175 @@
-// Roteiro em seis mundos (Forma, Água, Matéria, Vida, Cristal, Dissolução).
+// Gerado a partir da apresentação estática (pele-como-joia-ALT/index.html). Os textos são os mesmos.
 import type { Slide } from "./deck-types";
 
 export const slides: Slide[] = [
-    {
-      "type": "cover",
-      "id": "capa",
-      "media": {
-        "kind": "video",
-        "src": "/media/capa-forma-branca.mp4",
-        "poster": "/media/capa-forma-branca.jpg",
-        "r": 1.7918,
-        "label": "capa-forma-branca"
+  {
+    "type": "cover",
+    "id": "capa",
+    "media": {
+      "kind": "video",
+      "src": "/media/capa-forma-branca.mp4",
+      "poster": "/media/capa-forma-branca.jpg",
+      "r": 1.7918
+    },
+    "kicker": "Pele como jóia",
+    "lines": [
+      "O despertar",
+      "da matéria"
+    ],
+    "sub": "Roteiro narrativo · jantar imersivo em 8 etapas"
+  },
+  {
+    "type": "manifesto",
+    "id": "conceito",
+    "kicker": "A Forma e a Partícula",
+    "title": "Conceito estrutural",
+    "html": "O despertar da matéria é um convite a uma experiência gastronômica multissensorial sobre a pele e a beleza sublime. Em 8 momentos, a sala, o som e os pratos contam uma transformação: a partir da partícula divina, atravessamos a criação desde o seu primeiro momento, entendendo como a vida se inicia na água, costurando a realidade até chegarmos à pele e à sua beleza. Transitando pelo orgânico e pelo sintético, entendemos onde as partículas mais raras se encontram.",
+    "nota": "Cada etapa é um <b>visual em loop</b>, disparado à mão por um técnico no iPad, no ritmo em que os pratos são servidos e degustados. As <b>transições</b> ligam uma etapa à outra: entram fortes e se resolvem dentro do loop da etapa seguinte. Paredes, piso e mesa formam <b>um único ambiente contínuo</b>, com o convidado no meio dele."
+  },
+  {
+    "type": "mapa",
+    "id": "mapa",
+    "kicker": "Mapa",
+    "title": "O jantar",
+    "cards": [
+      {
+        "media": {
+          "kind": "video",
+          "src": "/media/capa-forma-branca.mp4",
+          "poster": "/media/capa-forma-branca.jpg",
+          "r": 1.7918
+        },
+        "n": "1",
+        "title": "Início - Introdução",
+        "desc": "Sala branca. A Forma recebe os convidados, os leva à mesa e abre a noite.",
+        "transition": false
       },
-      "kicker": "Pele como jóia",
-      "lines": [
-        "O despertar",
-        "da matéria"
-      ],
-      "sub": "Roteiro narrativo · jantar imersivo em seis mundos"
-    },
-    {
-      "type": "manifesto",
-      "id": "conceito",
-      "kicker": "A Forma e a Matéria",
-      "title": "Conceito estrutural",
-      "html": "O despertar da matéria é um jantar multissensorial sobre a pele e a beleza sublime. A noite atravessa seis mundos, e cada mundo é um estado da matéria com identidade visual própria: a Forma, a água, a matéria que se organiza, a vida, o cristal e a dissolução, que devolve tudo à Forma. Cada prato acontece dentro de um mundo; a transformação acontece na passagem de um para o outro.",
-      "nota": "Cada mundo é um <b>visual em loop</b>, disparado à mão por um técnico no iPad, no ritmo em que os pratos são servidos e degustados. As <b>passagens</b> ligam um mundo ao outro: entram fortes e se resolvem dentro do loop seguinte. Paredes, piso e mesa formam <b>um único ambiente contínuo</b>, com o convidado no meio dele."
-    },
-    {
-      "type": "mapa",
-      "id": "mapa",
-      "kicker": "Mapa",
-      "title": "O jantar",
-      "cards": [
-        {
-          "media": {
-            "kind": "video",
-            "src": "/media/capa-forma-branca.mp4",
-            "poster": "/media/capa-forma-branca.jpg",
-            "r": 1.7918,
-            "label": "capa-forma-branca",
-            "pos": "50% 46%"
-          },
-          "n": "1",
-          "title": "A Forma - Recepção",
-          "desc": "A Forma existe sozinha, respira e revela sua estrutura.",
-          "transition": false
+      {
+        "media": {
+          "kind": "video",
+          "src": "/media/bb-3-cupula.mp4",
+          "poster": "/media/bb-3-cupula.jpg",
+          "r": 0.5625
         },
-        {
-          "media": {
-            "kind": "video",
-            "src": "/media/principal-1-gotas.mp4",
-            "poster": "/media/principal-1-gotas.jpg",
-            "r": 0.6744,
-            "label": "principal-1-gotas"
-          },
-          "n": "2",
-          "title": "Origem - Couvert",
-          "desc": "A Forma se dissolve e abre o mundo da água.",
-          "transition": false
-        },
-        {
-          "media": {
-            "kind": "image",
-            "src": "/media/materia-1-malha-dourada.jpg",
-            "r": 2.3337,
-            "label": "materia-1-malha-dourada"
-          },
-          "n": "3",
-          "title": "Matéria - Entrada",
-          "desc": "Partículas se agrupam: pontos, linhas, malhas, volumes.",
-          "transition": false
-        },
-        {
-          "media": {
-            "kind": "image",
-            "src": "/media/vida-1-amanhecer.jpg",
-            "r": 2.3337,
-            "label": "vida-1-amanhecer"
-          },
-          "n": "4",
-          "title": "Vida - Prato principal",
-          "desc": "A matéria organizada cresce e vira paisagem botânica.",
-          "transition": false
-        },
-        {
-          "media": {
-            "kind": "image",
-            "src": "/media/cristal-1-gemas.jpg",
-            "r": 2.5221,
-            "label": "cristal-1-gemas"
-          },
-          "n": "5",
-          "title": "Cristal - Sobremesa",
-          "desc": "As fibras endurecem e o espaço vira cristal e luz.",
-          "transition": false
-        },
-        {
-          "media": {
-            "kind": "image",
-            "src": "/media/dissolucao-3-esferas.jpg",
-            "r": 5.814,
-            "label": "dissolucao-3-esferas"
-          },
-          "n": "6",
-          "title": "Dissolução - Final",
-          "desc": "O cristal se desfaz até virar água e reencontrar a Forma.",
-          "transition": false
-        }
-      ]
-    },
-    {
-      "type": "opener",
-      "id": "forma",
-      "dark": false,
-      "media": {
-        "kind": "video",
-        "src": "/media/capa-forma-branca.mp4",
-        "poster": "/media/capa-forma-branca.jpg",
-        "r": 1.7918,
-        "label": "capa-forma-branca"
+        "n": "2",
+        "title": "O Despertar - Transição",
+        "desc": "A passagem mais rápida, pelo início da criação.",
+        "transition": true
       },
-      "etapa": "Mundo 1 de 6",
-      "fase": "Recepção",
-      "title": "A Forma",
-      "reino": "Forma · antes de tudo",
-      "sub": "Antes do jantar começar",
-      "narr": "A sala está em estado neutro e a Forma é a primeira coisa que o convidado encontra. Ela existe sozinha, quase como uma entidade, e não precisa ser explicada. Durante a recepção ela respira, se deforma, se multiplica e revela a estrutura que tem por dentro. Quando o jantar começa, a Forma não desaparece: ela se desfaz.",
-      "atm": {
-        "label": "Atmosfera",
-        "html": "Branco leitoso, cromo e vidro. Luz, nunca cor. Movimento mínimo, quase estático, para não competir com a recepção."
+      {
+        "media": {
+          "kind": "video",
+          "src": "/media/principal-1-gotas.mp4",
+          "poster": "/media/principal-1-gotas.jpg",
+          "r": 0.6744
+        },
+        "n": "3",
+        "title": "Hidratação Molecular - Entrada",
+        "desc": "O líquido matriz se forma, gerando vida.",
+        "transition": false
+      },
+      {
+        "media": {
+          "kind": "video",
+          "src": "/media/pele-paisagem-macro-1.mp4",
+          "poster": "/media/pele-paisagem-macro-1.jpg",
+          "r": 1.7985
+        },
+        "n": "4",
+        "title": "Pele Sedosa - Prato Principal",
+        "desc": "A pele aparece, suave como seda.",
+        "transition": false
+      },
+      {
+        "media": {
+          "kind": "video",
+          "src": "/media/pele-petala-gota.mp4",
+          "poster": "/media/pele-petala-gota.jpg",
+          "r": 1.7985
+        },
+        "n": "5",
+        "title": "Beleza Natural - Prato Principal",
+        "desc": "A matéria se transforma, a natureza se mostra.",
+        "transition": true
+      },
+      {
+        "media": {
+          "kind": "video",
+          "src": "/media/dunas-video-3-poeira-dourada.mp4",
+          "poster": "/media/dunas-video-3-poeira-dourada.jpg",
+          "r": 0.8
+        },
+        "n": "6",
+        "title": "Matéria Primária - Sobremesa",
+        "desc": "Ventos sopram, o ouro surge.",
+        "transition": false
+      },
+      {
+        "media": {
+          "kind": "video",
+          "src": "/media/dunas-video-2-ouro-liquido.mp4",
+          "poster": "/media/dunas-video-2-ouro-liquido.jpg",
+          "r": 0.8
+        },
+        "n": "7",
+        "title": "Partícula Rara - Transição",
+        "desc": "As partículas raras ganham corpo.",
+        "transition": true
+      },
+      {
+        "media": {
+          "kind": "video",
+          "src": "/media/final-4-diamante.mp4",
+          "poster": "/media/final-4-diamante.jpg",
+          "r": 0.5625
+        },
+        "n": "8",
+        "title": "A pele como uma jóia - Final",
+        "desc": "Diamantes na mesa quebram a luz em cores.",
+        "transition": false
       }
+    ]
+  },
+  {
+    "type": "opener",
+    "id": "inicio",
+    "dark": false,
+    "media": {
+      "kind": "video",
+      "src": "/media/capa-forma-branca.mp4",
+      "poster": "/media/capa-forma-branca.jpg",
+      "r": 1.7918
     },
-    {
-      "type": "item",
-      "id": "forma-sequencia",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Recepção",
-        "nome": "A Forma",
-        "secao": "Sequência do loop"
-      },
-      "num": "01",
-      "title": "A Forma respira",
-      "html": "Um anel de cromo líquido pulsa no centro da parede principal. A voz que abre a noite tem corpo: faz a Forma vibrar e se desdobra em refrações sobre a mesa.",
-      "tiles": [
-        {
-          "kind": "video",
-          "src": "/media/inicio-9-forma-pb.mp4",
-          "poster": "/media/inicio-9-forma-pb.jpg",
-          "r": 1.3333,
-          "label": "inicio-9-forma-pb"
-        },
-        {
-          "kind": "video",
-          "src": "/media/forma-1-circulos.mp4",
-          "poster": "/media/forma-1-circulos.jpg",
-          "r": 0.5625,
-          "label": "forma-1-circulos",
-          "pos": "50% 36%"
-        },
-        {
-          "kind": "video",
-          "src": "/media/inicio-10-anel-invertido.mp4",
-          "poster": "/media/inicio-10-anel-invertido.jpg",
-          "r": 0.6557,
-          "label": "inicio-10-anel-invertido"
-        }
-      ],
-      "layout": "stack"
+    "etapa": "Etapa 1 de 8",
+    "fase": "Introdução",
+    "title": "Início",
+    "reino": "Gênese · A Forma",
+    "sub": "A sala respira",
+    "narr": "Antes de qualquer prato, existe só luz. A Forma recebe cada convidado e o conduz até a mesa. Com todos sentados, ela abre a noite com uma voz etérea, e essa voz tem corpo: faz a Forma vibrar e se desdobra em refrações sobre a mesa.",
+    "atm": {
+      "label": "Atmosfera",
+      "html": "Branco leitoso, cromo e vidro. Luz, nunca cor. Movimento mínimo, quase estático, para não competir com a recepção."
+    }
+  },
+  {
+    "type": "item",
+    "id": "inicio-sequencia",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Introdução",
+      "nome": "Início",
+      "secao": "Sequência do loop"
     },
-    {
-      "type": "item",
-      "id": "forma-sequencia-2",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Recepção",
-        "nome": "A Forma",
-        "secao": "Sequência do loop"
-      },
-      "num": "02",
-      "title": "A sala branca",
-      "html": "Paredes e piso formam um branco contínuo, sem canto nem horizonte. No piso, discos de luz marcam o caminho até os lugares.",
-      "tiles": [
-        {
-          "kind": "image",
-          "src": "/media/inicio-2-caixa-de-luz.jpg",
-          "r": 1.4993,
-          "label": "inicio-2-caixa-de-luz"
-        },
-        {
-          "kind": "image",
-          "src": "/media/inicio-3-discos.jpg",
-          "r": 0.6834,
-          "label": "inicio-3-discos",
-          "pos": "50% 62%"
-        },
-        {
-          "kind": "video",
-          "src": "/media/inicio-7-portais.mp4",
-          "poster": "/media/inicio-7-portais.jpg",
-          "r": 0.5625,
-          "label": "inicio-7-portais",
-          "pos": "50% 55%"
-        }
-      ],
-      "layout": "stack"
-    },
-    {
-      "type": "som",
-      "id": "forma-som",
-      "dark": false,
-      "hd": {
-        "fase": "Recepção",
-        "nome": "A Forma",
-        "secao": "Sequência do loop"
-      },
-      "rows": [
-        {
-          "label": "Som",
-          "html": "White noise constante e voz da Forma em eco e reverb, sem batida. Um tom puro e grave de fundo (sugestão: 528 Hz), que volta no Final.",
-          "tiles": []
-        }
-      ]
-    },
-    {
-      "type": "item",
-      "id": "forma-transicao",
-      "dark": false,
-      "variant": "trans",
-      "hd": {
-        "fase": "Recepção",
-        "nome": "A Forma",
-        "secao": "Passagem"
-      },
-      "num": "",
-      "title": "A Forma → Origem",
-      "html": "A Forma se fragmenta e sua estrutura interna fica exposta. O que era sólido perde a borda, começa a escorrer e abre o primeiro mundo: a água.",
-      "tiles": [
-        {
-          "kind": "video",
-          "src": "/media/inicio-9-forma-pb.mp4",
-          "poster": "/media/inicio-9-forma-pb.jpg",
-          "r": 1.3333,
-          "label": "inicio-9-forma-pb"
-        },
-        {
-          "kind": "video",
-          "src": "/media/agua-10-esfera.mp4",
-          "poster": "/media/agua-10-esfera.jpg",
-          "r": 0.5625,
-          "label": "agua-10-esfera"
-        }
-      ],
-      "layout": "stack"
-    },
-    {
-      "type": "opener",
-      "id": "origem",
-      "dark": false,
-      "media": {
+    "num": "01",
+    "title": "Cenário Branco Voice Over",
+    "html": "Paredes e piso formam um branco contínuo, sem canto nem horizonte, como uma galeria infinita. O fundo se move devagar, numa textura orgânica quase invisível, e a sala parece respirar. No piso, discos de luz suaves marcam o caminho até os lugares. Uma voz etérea chama os convidados a se sentar. No centro da parede principal está a Forma, um anel de cromo líquido que pulsa e se distorce a cada palavra. A voz se desdobra em ondulações sobre a escultura viva.",
+    "tiles": [
+      {
         "kind": "video",
-        "src": "/media/principal-1-gotas.mp4",
-        "poster": "/media/principal-1-gotas.jpg",
-        "r": 0.6744,
-        "label": "principal-1-gotas"
+        "src": "/media/inicio-9-forma-pb.mp4",
+        "poster": "/media/inicio-9-forma-pb.jpg",
+        "r": 1.3333,
+        "label": "inicio-9-forma-pb"
       },
-      "etapa": "Mundo 2 de 6",
+      {
+        "kind": "image",
+        "src": "/media/inicio-2-caixa-de-luz.jpg",
+        "r": 1.4993,
+        "label": "inicio-2-caixa-de-luz"
+      },
+      {
+        "kind": "image",
+        "src": "/media/inicio-3-discos.jpg",
+        "r": 0.6834,
+        "label": "inicio-3-discos"
+      },
+      {
+        "kind": "video",
+        "src": "/media/inicio-10-anel-invertido.mp4",
+        "poster": "/media/inicio-10-anel-invertido.jpg",
+        "r": 0.6557,
+        "label": "inicio-10-anel-invertido"
+      }
+    ],
+    "layout": "stack"
+  },
+  {
+    "type": "som",
+    "id": "inicio-som",
+    "dark": false,
+    "hd": {
+      "fase": "Introdução",
+      "nome": "Início",
+      "secao": "Som"
+    },
+    "rows": [
+      {
+        "label": "Som",
+        "html": "White noise constante e voz da Forma em eco e reverb, sem batida. Um tom puro e grave de fundo (sugestão: 528 Hz), que volta no Final.",
+        "tiles": []
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "id": "couvert-origem",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
       "fase": "Couvert",
-      "title": "Origem",
-      "reino": "Água",
-      "sub": "O primeiro contato com a comida",
-      "narr": "A dissolução da Forma revela um ambiente de água. A escala muda por completo: partículas, moléculas e pequenos fluxos. O couvert acontece dentro desse mundo e, enquanto as pessoas comem, a água deixa de ser só ambiente: as moléculas se aproximam, se agrupam e começam a formar estrutura.",
-      "atm": {
-        "label": "Atmosfera",
-        "html": "Branco perolado, azuis profundos, prata e turquesa translúcido. Movimento fluido e contínuo, sensação de leveza."
+      "nome": "Origem",
+      "secao": "Sequência do loop"
+    },
+    "num": "01",
+    "title": "Gotas de Água",
+    "html": "Gotas de água se formando e expandindo.",
+    "tiles": [
+      {
+        "kind": "image",
+        "src": "/media/couvert-1-lago-esferas.jpg",
+        "r": 5.5866,
+        "label": "couvert-1-lago-esferas"
+      },
+      {
+        "kind": "image",
+        "src": "/media/couvert-3-agua-bolhas.jpg",
+        "r": 6.5147,
+        "label": "couvert-3-agua-bolhas"
+      },
+      {
+        "kind": "image",
+        "src": "/media/couvert-2-mesa-agua.jpg",
+        "r": 5.0251,
+        "label": "couvert-2-mesa-agua"
       }
+    ],
+    "layout": "pano"
+  },
+  {
+    "type": "item",
+    "id": "inicio-transicao",
+    "dark": true,
+    "variant": "trans",
+    "hd": {
+      "fase": "Introdução",
+      "nome": "Início",
+      "secao": "Transição"
     },
-    {
-      "type": "item",
-      "id": "origem-sequencia",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Couvert",
-        "nome": "Origem",
-        "secao": "Sequência do loop"
+    "num": "",
+    "title": "Início → O Despertar",
+    "html": "Energias começam a carregar nossa escultura viva, até explodir como o Big Bang.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/forma-1-circulos.mp4",
+        "poster": "/media/forma-1-circulos.jpg",
+        "r": 0.5625,
+        "label": "forma-1-circulos"
       },
-      "num": "01",
-      "title": "Gotas de Água",
-      "html": "Gotas de água se formando e expandindo.",
-      "tiles": [
-        {
-          "kind": "image",
-          "src": "/media/couvert-1-lago-esferas.jpg",
-          "r": 5.5866,
-          "label": "couvert-1-lago-esferas"
-        },
-        {
-          "kind": "image",
-          "src": "/media/couvert-3-agua-bolhas.jpg",
-          "r": 6.5147,
-          "label": "couvert-3-agua-bolhas"
-        },
-        {
-          "kind": "image",
-          "src": "/media/couvert-2-mesa-agua.jpg",
-          "r": 5.0251,
-          "label": "couvert-2-mesa-agua"
-        }
-      ],
-      "layout": "pano"
+      {
+        "kind": "video",
+        "src": "/media/inicio-7-portais.mp4",
+        "poster": "/media/inicio-7-portais.jpg",
+        "r": 0.5625,
+        "label": "inicio-7-portais"
+      }
+    ],
+    "layout": "side"
+  },
+  {
+    "type": "opener",
+    "id": "despertar",
+    "dark": false,
+    "media": {
+      "kind": "video",
+      "src": "/media/bb-3-cupula.mp4",
+      "poster": "/media/bb-3-cupula.jpg",
+      "r": 0.5625
     },
-    {
-      "type": "item",
-      "id": "origem-sequencia-2",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Couvert",
-        "nome": "Origem",
-        "secao": "Sequência do loop"
+    "etapa": "Etapa 2 de 8",
+    "fase": "Transição",
+    "title": "O Despertar",
+    "reino": "Big Bang · Era das partículas",
+    "sub": "A energia vira universo",
+    "narr": "A passagem mais rápida e intensa da noite, que só acontece uma vez. Toda a luz da Forma explode, e rapidamente nasce um cosmos: energia, estrelas e as primeiras ligações entre elas.",
+    "atm": {
+      "label": "Atmosfera",
+      "html": "Preto e branco, só luz e sombra. Movimentos matemáticos, precisos, repetidos e acelerados. Formas surgem e somem em segundos, e uma vira a outra sem parar."
+    },
+    "crop": 1
+  },
+  {
+    "type": "board",
+    "id": "despertar-sequencia",
+    "dark": false,
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/bb-8-estrelas.mp4",
+        "poster": "/media/bb-8-estrelas.jpg",
+        "r": 0.5625,
+        "label": "bb-8-estrelas"
       },
-      "num": "02",
-      "title": "Moléculas se aproximam",
-      "html": "Da superfície descemos até a profundidade. As partículas param de flutuar soltas, se atraem e começam a se organizar em pequenos agrupamentos.",
-      "tiles": [
-        {
-          "kind": "video",
-          "src": "/media/agua-8-ondas.mp4",
-          "poster": "/media/agua-8-ondas.jpg",
-          "r": 0.5625,
-          "label": "agua-8-ondas"
-        },
-        {
-          "kind": "video",
-          "src": "/media/agua-9-ondas.mp4",
-          "poster": "/media/agua-9-ondas.jpg",
-          "r": 0.5625,
-          "label": "agua-9-ondas"
-        },
-        {
-          "kind": "video",
-          "src": "/media/bio-3-profundidade.mp4",
-          "poster": "/media/bio-3-profundidade.jpg",
-          "r": 1.0,
-          "label": "bio-3-profundidade"
-        },
-        {
-          "kind": "video",
-          "src": "/media/bio-1-profundidade.mp4",
-          "poster": "/media/bio-1-profundidade.jpg",
-          "r": 0.5625,
-          "label": "bio-1-profundidade"
-        }
-      ],
-      "layout": "stack"
-    },
-    {
-      "type": "som",
-      "id": "origem-som",
-      "dark": false,
-      "hd": {
-        "fase": "Couvert",
-        "nome": "Origem",
-        "secao": "Sequência do loop"
+      {
+        "kind": "video",
+        "src": "/media/bb-7-explosao.mp4",
+        "poster": "/media/bb-7-explosao.jpg",
+        "r": 0.5625,
+        "label": "bb-7-explosao"
       },
-      "rows": [
-        {
-          "label": "Som",
-          "html": "Água calma e ondas suaves na superfície. Na profundidade, sons subaquáticos, movimentação de líquido e pads etéreos.",
-          "tiles": []
-        },
-        {
-          "label": "Nos pratos",
-          "html": "A mesa vira a própria superfície da água: gotas caem, formam ondas concêntricas e se espalham pelo espaço.",
-          "tiles": []
-        }
-      ]
-    },
-    {
-      "type": "item",
-      "id": "origem-transicao",
-      "dark": false,
-      "variant": "trans",
-      "hd": {
-        "fase": "Couvert",
-        "nome": "Origem",
-        "secao": "Passagem"
+      {
+        "kind": "video",
+        "src": "/media/foco-energia-1.mp4",
+        "poster": "/media/foco-energia-1.jpg",
+        "r": 0.5625,
+        "label": "foco-energia-1"
       },
-      "num": "",
-      "title": "Origem → Matéria",
-      "html": "Os agrupamentos param de se comportar como líquido. O movimento fica mais lento e mais firme, e a água entrega sua matéria ao mundo seguinte.",
-      "tiles": [
-        {
-          "kind": "video",
-          "src": "/media/bio-2-profundidade.mp4",
-          "poster": "/media/bio-2-profundidade.jpg",
-          "r": 0.5625,
-          "label": "bio-2-profundidade"
-        },
-        {
-          "kind": "image",
-          "src": "/media/materia-3-circulos-ouro.jpg",
-          "r": 2.3895,
-          "label": "materia-3-circulos-ouro"
-        }
-      ],
-      "layout": "stack"
+      {
+        "kind": "video",
+        "src": "/media/foco-energia-2.mp4",
+        "poster": "/media/foco-energia-2.jpg",
+        "r": 1.0,
+        "label": "foco-energia-2"
+      }
+    ]
+  },
+  {
+    "type": "som",
+    "id": "despertar-som",
+    "dark": false,
+    "hd": {
+      "fase": "Transição",
+      "nome": "O Despertar",
+      "secao": "Som · pratos"
     },
-    {
-      "type": "opener",
-      "id": "materia",
-      "dark": false,
-      "media": {
+    "rows": [
+      {
+        "label": "Som",
+        "html": "Sub-bass profundo sentido no corpo, silêncios pontuais, sintetizadores metálicos e pulsos eletrônicos regulares, crescendo em intensidade.",
+        "tiles": []
+      },
+      {
+        "label": "Nos pratos",
+        "html": "<em>(sugestão)</em> o núcleo de luz pulsando no centro de cada prato, que depois se abre em estrelas.",
+        "tiles": []
+      }
+    ]
+  },
+  {
+    "type": "opener",
+    "id": "hidratacao",
+    "dark": false,
+    "media": {
+      "kind": "video",
+      "src": "/media/principal-1-gotas.mp4",
+      "poster": "/media/principal-1-gotas.jpg",
+      "r": 0.6744
+    },
+    "etapa": "Etapa 3 de 8",
+    "fase": "Entrada",
+    "title": "Hidratação Molecular",
+    "reino": "Água",
+    "sub": "O elemento fluido",
+    "narr": "Da energia nasce a água, e tudo se dissolve e se reconecta: ondas, movimento e profundidade. Começamos na superfície e decantamos até chegar ao fundo do mar e às suas partículas bioluminescentes.",
+    "atm": {
+      "label": "Atmosfera",
+      "html": "Branco perolado, azuis profundos, prata, turquesa translúcido, com brilhos dourados da luz atravessando a água. Movimento fluido e contínuo, sensação de leveza."
+    }
+  },
+  {
+    "type": "item",
+    "id": "hidratacao-sequencia",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Entrada",
+      "nome": "Hidratação Molecular",
+      "secao": "Sequência do loop"
+    },
+    "num": "01",
+    "title": "Superfície e Ondas",
+    "html": "O piso vira um “oceano” visto de cima, com ondulações suaves; as paredes mostram água em movimento vertical, como cachoeiras lentas.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/agua-8-ondas.mp4",
+        "poster": "/media/agua-8-ondas.jpg",
+        "r": 0.5625,
+        "label": "agua-8-ondas"
+      },
+      {
+        "kind": "video",
+        "src": "/media/agua-9-ondas.mp4",
+        "poster": "/media/agua-9-ondas.jpg",
+        "r": 0.5625,
+        "label": "agua-9-ondas"
+      },
+      {
+        "kind": "video",
+        "src": "/media/agua-10-esfera.mp4",
+        "poster": "/media/agua-10-esfera.jpg",
+        "r": 0.5625,
+        "label": "agua-10-esfera"
+      }
+    ],
+    "layout": "stack"
+  },
+  {
+    "type": "item",
+    "id": "hidratacao-sequencia-panoramas",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Entrada",
+      "nome": "Hidratação Molecular",
+      "secao": "Sequência do loop"
+    },
+    "num": "01",
+    "title": "Superfície e Ondas",
+    "html": "",
+    "tiles": [
+      {
+        "kind": "image",
+        "src": "/media/agua-11-panorama-esferas.jpg",
+        "r": 5.5944,
+        "label": "agua-11-panorama-esferas"
+      },
+      {
+        "kind": "image",
+        "src": "/media/agua-12-panorama-gelo.jpg",
+        "r": 5.5944,
+        "label": "agua-12-panorama-gelo"
+      }
+    ],
+    "layout": "pano"
+  },
+  {
+    "type": "item",
+    "id": "hidratacao-sequencia-2",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Entrada",
+      "nome": "Hidratação Molecular",
+      "secao": "Sequência do loop"
+    },
+    "num": "02",
+    "title": "Profundidade e Bioluminescência",
+    "html": "A perspectiva mergulha, revelando partículas bioluminescentes flutuando como no fundo do oceano; a mesa reflete luzes azuis dançantes.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/bio-1-profundidade.mp4",
+        "poster": "/media/bio-1-profundidade.jpg",
+        "r": 0.5625,
+        "label": "bio-1-profundidade"
+      },
+      {
+        "kind": "video",
+        "src": "/media/bio-2-profundidade.mp4",
+        "poster": "/media/bio-2-profundidade.jpg",
+        "r": 0.5625,
+        "label": "bio-2-profundidade"
+      },
+      {
+        "kind": "video",
+        "src": "/media/bio-3-profundidade.mp4",
+        "poster": "/media/bio-3-profundidade.jpg",
+        "r": 1.0,
+        "label": "bio-3-profundidade"
+      },
+      {
+        "kind": "video",
+        "src": "/media/bio-4-profundidade.mp4",
+        "poster": "/media/bio-4-profundidade.jpg",
+        "r": 0.5625,
+        "label": "bio-4-profundidade"
+      }
+    ],
+    "layout": "stack"
+  },
+  {
+    "type": "som",
+    "id": "hidratacao-som",
+    "dark": false,
+    "hd": {
+      "fase": "Entrada",
+      "nome": "Hidratação Molecular",
+      "secao": "Som · pratos"
+    },
+    "rows": [
+      {
+        "label": "Som",
+        "html": "Água calma e ondas suaves na superfície. Na profundidade, sons subaquáticos, movimentação de líquido e pads etéreos.",
+        "tiles": []
+      },
+      {
+        "label": "Nos pratos",
+        "html": "<p><em>(sugestão)</em> reflexos líquidos, como se a mesa fosse a própria superfície da água, com gotas que caem e formam ondas concêntricas, que depois começam a se movimentar pelo espaço.</p>",
+        "tiles": []
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "id": "hidratacao-transicao",
+    "dark": true,
+    "variant": "trans",
+    "hd": {
+      "fase": "Entrada",
+      "nome": "Hidratação Molecular",
+      "secao": "Transição"
+    },
+    "num": "",
+    "title": "Hidratação Molecular → Pele Sedosa",
+    "html": "As partículas bioluminescentes da profundeza começam a surgir na projeção e se conectam entre si, iluminando a sala inteira. A câmera dá um zoom na própria partícula de vida — e é de dentro dela que nasce, em construção progressiva, o primeiro landscape de textura de pele. A água não desaparece: ela <em>hidrata</em> o que nasce a seguir.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/transicao-3-pele-clara.mp4",
+        "poster": "/media/transicao-3-pele-clara.jpg",
+        "r": 0.5625,
+        "label": "transicao-3-pele-clara"
+      }
+    ],
+    "layout": "side"
+  },
+  {
+    "type": "opener",
+    "id": "pele-sedosa",
+    "dark": false,
+    "media": {
+      "kind": "video",
+      "src": "/media/pele-paisagem-macro-1.mp4",
+      "poster": "/media/pele-paisagem-macro-1.jpg",
+      "r": 1.7985
+    },
+    "etapa": "Etapa 4 de 8",
+    "fase": "Prato Principal",
+    "title": "Pele Sedosa",
+    "reino": "Humano · A pele como paisagem",
+    "sub": "A consciência emerge",
+    "narr": "A água dá lugar à pele — hidratada, viva, sensível. É o corpo se tornando paisagem.",
+    "atm": {
+      "label": "Atmosfera",
+      "html": "Tons de pele — bege, terracota, rosa dourado; textura orgânica vista de perto, como paisagens; movimento sutil, quase uma respiração."
+    },
+    "crop": 1
+  },
+  {
+    "type": "item",
+    "id": "pele-sedosa-sequencia",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Prato Principal",
+      "nome": "Pele Sedosa",
+      "secao": "Sequência do loop"
+    },
+    "num": "01",
+    "title": "Pele como Paisagem",
+    "html": "Macro de textura de pele hidratada, formando um landscape: poros, linhas e veias viram vales e montanhas.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/transicao-materia-primaria.mp4",
+        "poster": "/media/transicao-materia-primaria.jpg",
+        "r": 0.6667,
+        "label": "transicao-materia-primaria"
+      },
+      {
+        "kind": "video",
+        "src": "/media/pele-sedosa-duna.mp4",
+        "poster": "/media/pele-sedosa-duna.jpg",
+        "r": 1.794,
+        "label": "pele-sedosa-duna"
+      }
+    ],
+    "layout": "stack"
+  },
+  {
+    "type": "som",
+    "id": "pele-sedosa-som",
+    "dark": false,
+    "hd": {
+      "fase": "Prato Principal",
+      "nome": "Pele Sedosa",
+      "secao": "Som · pratos"
+    },
+    "rows": [
+      {
+        "label": "Som",
+        "html": "Respiração humana amplificada e batimento cardíaco suave, muito lento, sob um pad quente.",
+        "tiles": []
+      },
+      {
+        "label": "Nos pratos",
+        "html": "<em>(sugestão)</em> o prato servido sobre uma superfície que lembra pele, macia e com brilho sutil de hidratação.",
+        "tiles": []
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "id": "pele-sedosa-transicao",
+    "dark": true,
+    "variant": "trans",
+    "hd": {
+      "fase": "Prato Principal",
+      "nome": "Pele Sedosa",
+      "secao": "Transição"
+    },
+    "num": "",
+    "title": "Pele Sedosa → Beleza Natural",
+    "html": "A respiração da pele se aprofunda, até que a superfície começa a ondular. A pele se solta do chão como um tecido e ganha vento. O relevo deixa de ser terreno e vira dobra.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/pele-petala-gota.mp4",
+        "poster": "/media/pele-petala-gota.jpg",
+        "r": 1.7985,
+        "label": "pele-petala-gota"
+      }
+    ],
+    "layout": "side"
+  },
+  {
+    "type": "opener",
+    "id": "beleza-natural",
+    "dark": false,
+    "media": {
+      "kind": "video",
+      "src": "/media/beleza-flor-petalas.mp4",
+      "poster": "/media/beleza-flor-petalas.jpg",
+      "r": 1.7985
+    },
+    "etapa": "Etapa 5 de 8",
+    "fase": "Prato Principal",
+    "title": "Beleza Natural",
+    "reino": "Humano · A pele em movimento",
+    "sub": "A pele se deixa levar",
+    "narr": "A paisagem transita para algo mais fluido: tecidos, texturas de flores nos tons do reino, ventos e ondas passando por cima da “pele-paisagem” — leve, como se estivéssemos sendo transportados para dentro desse lugar.",
+    "atm": {
+      "label": "Atmosfera",
+      "html": "Rosa dourado, marfim e pérola, com reflexos iridescentes nas bordas. Movimento amplo e lento, sem peso."
+    }
+  },
+  {
+    "type": "item",
+    "id": "beleza-natural-sequencia",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Prato Principal",
+      "nome": "Beleza Natural",
+      "secao": "Sequência do loop"
+    },
+    "num": "01",
+    "title": "Pele como Flor",
+    "html": "Pétalas se abrem em câmera lenta nos tons do reino, com a luz se partindo em arco-íris nas bordas. Sobre a mesa, flores de luz desabrocham e se fecham.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/pele-como-flor-2.mp4",
+        "poster": "/media/pele-como-flor-2.jpg",
+        "r": 0.7632,
+        "label": "pele-como-flor-2"
+      },
+      {
+        "kind": "video",
+        "src": "/media/pele-flor-branca.mp4",
+        "poster": "/media/pele-flor-branca.jpg",
+        "r": 0.7632,
+        "label": "pele-flor-branca"
+      },
+      {
+        "kind": "video",
+        "src": "/media/pele-em-movimento.mp4",
+        "poster": "/media/pele-em-movimento.jpg",
+        "r": 0.7632,
+        "label": "pele-em-movimento"
+      }
+    ],
+    "layout": "stack"
+  },
+  {
+    "type": "item",
+    "id": "beleza-natural-sequencia-2",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Prato Principal",
+      "nome": "Beleza Natural",
+      "secao": "Sequência do loop"
+    },
+    "num": "02",
+    "title": "Pele como Tecido",
+    "html": "Dobras de seda cruzam as paredes e o teto como se o vento as empurrasse. A sala vira um pavilhão de tecido vivo, e o piso ondula como pano sobre a pele.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/pele-paisagem-seda.mp4",
+        "poster": "/media/pele-paisagem-seda.jpg",
+        "r": 0.75,
+        "label": "pele-paisagem-seda"
+      },
+      {
+        "kind": "image",
+        "src": "/media/sobremesa-5-sala-seda.jpg",
+        "r": 0.7439,
+        "label": "sobremesa-5-sala-seda"
+      },
+      {
+        "kind": "video",
+        "src": "/media/sobremesa-6-pavilhao.mp4",
+        "poster": "/media/sobremesa-6-pavilhao.jpg",
+        "r": 0.75,
+        "label": "sobremesa-6-pavilhao"
+      }
+    ],
+    "layout": "stack"
+  },
+  {
+    "type": "som",
+    "id": "beleza-natural-som",
+    "dark": false,
+    "hd": {
+      "fase": "Prato Principal",
+      "nome": "Beleza Natural",
+      "secao": "Som"
+    },
+    "rows": [
+      {
+        "label": "Som",
+        "html": "Tecido farfalhando, vento suave e cordas (violoncelo e harpa), com o batimento cardíaco da etapa anterior ainda ao fundo.",
+        "tiles": []
+      },
+      {
+        "label": "Som da transição",
+        "html": "Coro etéreo e pulsos sincronizados, que se cortam num silêncio seco antes do primeiro vento de areia.",
+        "tiles": []
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "id": "beleza-natural-transicao",
+    "dark": true,
+    "variant": "trans",
+    "hd": {
+      "fase": "Prato Principal",
+      "nome": "Beleza Natural",
+      "secao": "Transição"
+    },
+    "num": "",
+    "title": "Beleza Natural → Matéria Primária",
+    "html": "Sobre a pele surge uma rede de esferas de luz, como constelações ou redes neurais, pontos que ligam pessoa a pessoa na mesa. É o clímax emocional da noite. Aos poucos, essas esferas se soltam da paisagem e voltam a se comportar como moléculas soltas. O calor da pele se dessatura em tons terrosos, os tecidos secam e se desfazem em pó. O vivo se torna mineral.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/transicao-5-poeira-ouro.mp4",
+        "poster": "/media/transicao-5-poeira-ouro.jpg",
+        "r": 0.5625,
+        "label": "transicao-5-poeira-ouro"
+      }
+    ],
+    "layout": "side"
+  },
+  {
+    "type": "opener",
+    "id": "materia-primaria",
+    "dark": false,
+    "media": {
+      "kind": "video",
+      "src": "/media/dunas-video-1-nuvem-de-areia.mp4",
+      "poster": "/media/dunas-video-1-nuvem-de-areia.jpg",
+      "r": 0.8
+    },
+    "etapa": "Etapa 6 de 8",
+    "fase": "Sobremesa",
+    "title": "Matéria Primária",
+    "reino": "Mineral, ouro e partículas",
+    "sub": "A matéria se solidifica — e depois brilha",
+    "narr": "Do reino mineral nasce a jóia. A pele termina o ciclo: começou áspera como pedra, foi hidratada pela água, e agora se revela brilhante e preciosa — cuidada, como jóia.",
+    "atm": {
+      "label": "Atmosfera",
+      "html": "Começa em tons terrosos (marrom, cinza amarelado, ocre), transita para cristais translúcidos que quebram a luz em cor."
+    }
+  },
+  {
+    "type": "item",
+    "id": "materia-primaria-sequencia",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Sobremesa",
+      "nome": "Matéria Primária",
+      "secao": "Sequência do loop"
+    },
+    "num": "01",
+    "title": "Dunas e Erosão",
+    "html": "Piso e paredes exibem ondulações de areia dourada movendo-se como dunas ao vento; a mesa reflete padrões de erosão em rocha.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/dunas-video-2-ouro-liquido.mp4",
+        "poster": "/media/dunas-video-2-ouro-liquido.jpg",
+        "r": 0.8,
+        "label": "dunas-video-2-ouro-liquido"
+      },
+      {
+        "kind": "video",
+        "src": "/media/dunas-video-3-poeira-dourada.mp4",
+        "poster": "/media/dunas-video-3-poeira-dourada.jpg",
+        "r": 0.8,
+        "label": "dunas-video-3-poeira-dourada"
+      }
+    ],
+    "layout": "stack"
+  },
+  {
+    "type": "item",
+    "id": "materia-primaria-sequencia-2",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Sobremesa",
+      "nome": "Matéria Primária",
+      "secao": "Sequência do loop"
+    },
+    "num": "02",
+    "title": "Mandalas de Frequência",
+    "html": "O som que ecoa na sala começa a organizar a areia. Os grãos vibram e desenham ondas concêntricas, espirais e geometrias sagradas no piso e na mesa. Em cada prato nasce uma mandala de areia diferente.",
+    "tiles": [
+      {
+        "kind": "image",
+        "src": "/media/entrada-4-mao-na-areia.jpg",
+        "r": 0.5607,
+        "label": "entrada-4-mao-na-areia"
+      },
+      {
         "kind": "video",
         "src": "/media/pratos-2-mandala-ouro.mp4",
         "poster": "/media/pratos-2-mandala-ouro.jpg",
         "r": 0.5625,
         "label": "pratos-2-mandala-ouro"
       },
-      "etapa": "Mundo 3 de 6",
-      "fase": "Entrada",
-      "title": "Matéria",
-      "reino": "Organização",
-      "sub": "A matéria ganha estrutura",
-      "narr": "Aqui a matéria se organiza sem nunca representar nada biológico. Partículas se aproximam, se agrupam e criam padrões; os padrões se repetem e viram estruturas maiores: pontos, linhas, malhas, superfícies e volumes. A sala passa de um estado fluido para um estado cada vez mais estruturado.",
-      "atm": {
-        "label": "Atmosfera",
-        "html": "Preto, âmbar e ouro. Brilho de metal e de óleo sobre superfície escura. Movimento em camadas, que se repete e se adensa."
-      }
-    },
-    {
-      "type": "item",
-      "id": "materia-sequencia",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Entrada",
-        "nome": "Matéria",
-        "secao": "Sequência do loop"
-      },
-      "num": "01",
-      "title": "Pontos, linhas e malhas",
-      "html": "A malha se desenha sozinha e se ramifica pelas paredes. Depois se acumula em camadas, como estratos que crescem um sobre o outro.",
-      "tiles": [
-        {
-          "kind": "image",
-          "src": "/media/materia-1-malha-dourada.jpg",
-          "r": 2.3337,
-          "label": "materia-1-malha-dourada"
-        },
-        {
-          "kind": "image",
-          "src": "/media/materia-2-ondas-minerais.jpg",
-          "r": 2.8694,
-          "label": "materia-2-ondas-minerais"
-        }
-      ],
-      "layout": "pano"
-    },
-    {
-      "type": "item",
-      "id": "materia-sequencia-2",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Entrada",
-        "nome": "Matéria",
-        "secao": "Sequência do loop"
-      },
-      "num": "02",
-      "title": "Óleo",
-      "html": "Na mesa, a matéria aparece como óleo: superfície densa e brilhante, que envolve o que está servido e reflete a luz da sala.",
-      "tiles": [
-        {
-          "kind": "image",
-          "src": "/media/materia-4-oleo.jpg",
-          "r": 2.4125,
-          "label": "materia-4-oleo"
-        },
-        {
-          "kind": "image",
-          "src": "/media/materia-5-mesa-oleo.jpg",
-          "r": 4.8426,
-          "label": "materia-5-mesa-oleo"
-        }
-      ],
-      "layout": "pano"
-    },
-    {
-      "type": "som",
-      "id": "materia-som",
-      "dark": false,
-      "hd": {
-        "fase": "Entrada",
-        "nome": "Matéria",
-        "secao": "Sequência do loop"
-      },
-      "rows": [
-        {
-          "label": "Som",
-          "html": "<em>(sugestão)</em> pulsos curtos e secos que se repetem e vão se sobrepondo, atrito de partículas e um grave contínuo por baixo, sem batida marcada.",
-          "tiles": []
-        },
-        {
-          "label": "Nos pratos",
-          "html": "Óleo e matéria escura em volta do prato, com pequenos pontos de luz que se agrupam enquanto a entrada é servida.",
-          "tiles": []
-        }
-      ]
-    },
-    {
-      "type": "item",
-      "id": "materia-transicao",
-      "dark": false,
-      "variant": "trans",
-      "hd": {
-        "fase": "Entrada",
-        "nome": "Matéria",
-        "secao": "Passagem"
-      },
-      "num": "",
-      "title": "Matéria → Vida",
-      "html": "Algumas estruturas param de só se repetir: começam a se expandir e a se ramificar. É o primeiro indício de uma forma viva.",
-      "tiles": [
-        {
-          "kind": "video",
-          "src": "/media/transicao-3-pele-clara.mp4",
-          "poster": "/media/transicao-3-pele-clara.jpg",
-          "r": 0.5625,
-          "label": "transicao-3-pele-clara"
-        },
-        {
-          "kind": "image",
-          "src": "/media/vida-1-amanhecer.jpg",
-          "r": 2.3337,
-          "label": "vida-1-amanhecer"
-        }
-      ],
-      "layout": "stack"
-    },
-    {
-      "type": "opener",
-      "id": "vida",
-      "dark": false,
-      "media": {
+      {
         "kind": "video",
-        "src": "/media/pele-flor-branca.mp4",
-        "poster": "/media/pele-flor-branca.jpg",
-        "r": 1.7985,
-        "label": "pele-flor-branca"
-      },
-      "etapa": "Mundo 4 de 6",
-      "fase": "Prato principal",
-      "title": "Vida",
-      "reino": "Crescimento",
-      "sub": "O salto qualitativo",
-      "narr": "O que era organização começa a crescer, reagir e se desenvolver. Surgem formas simples, depois raízes, caules e folhas, até um organismo vegetal inteiro. A sala é tomada pela vida e o prato principal acontece dentro dela. Depois do ápice, o crescimento vira transformação e as estruturas se desfazem em fibras.",
-      "atm": {
-        "label": "Atmosfera",
-        "html": "Verde profundo, terra úmida e luz de amanhecer. Movimento orgânico e lento, de coisa que cresce."
+        "src": "/media/pratos-4-mandala-prato-ouro.mp4",
+        "poster": "/media/pratos-4-mandala-prato-ouro.jpg",
+        "r": 1.0,
+        "label": "pratos-4-mandala-prato-ouro"
       }
-    },
-    {
-      "type": "item",
-      "id": "vida-sequencia",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Prato principal",
-        "nome": "Vida",
-        "secao": "Sequência do loop"
-      },
-      "num": "01",
-      "title": "Paisagem botânica",
-      "html": "A paisagem se abre no horizonte e o dia nasce dentro da sala. Na mesa, a vegetação cresce em volta de cada lugar.",
-      "tiles": [
-        {
-          "kind": "image",
-          "src": "/media/vida-1-amanhecer.jpg",
-          "r": 2.3337,
-          "label": "vida-1-amanhecer"
-        },
-        {
-          "kind": "image",
-          "src": "/media/vida-3-mesa-flores.jpg",
-          "r": 5.0125,
-          "label": "vida-3-mesa-flores"
-        }
-      ],
-      "layout": "pano"
-    },
-    {
-      "type": "item",
-      "id": "vida-sequencia-2",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Prato principal",
-        "nome": "Vida",
-        "secao": "Sequência do loop"
-      },
-      "num": "02",
-      "title": "A vida ocupa a mesa",
-      "html": "O organismo se multiplica e toma a superfície inteira: folhas, talos e sementes sobre o tampo, entre os pratos.",
-      "tiles": [
-        {
-          "kind": "image",
-          "src": "/media/vida-4-abobrinha.jpg",
-          "r": 2.3337,
-          "label": "vida-4-abobrinha"
-        },
-        {
-          "kind": "image",
-          "src": "/media/vida-5-mesa-abobrinha.jpg",
-          "r": 4.9875,
-          "label": "vida-5-mesa-abobrinha"
-        }
-      ],
-      "layout": "pano"
-    },
-    {
-      "type": "item",
-      "id": "vida-sequencia-3",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Prato principal",
-        "nome": "Vida",
-        "secao": "Sequência do loop"
-      },
-      "num": "03",
-      "title": "Noite no jardim",
-      "html": "A luz baixa e a mesma paisagem vira noite. A cor esquenta, a vegetação escurece e o mundo começa a se recolher.",
-      "tiles": [
-        {
-          "kind": "image",
-          "src": "/media/vida-2-noite.jpg",
-          "r": 2.3337,
-          "label": "vida-2-noite"
-        },
-        {
-          "kind": "image",
-          "src": "/media/vida-8-mesa-hibisco.jpg",
-          "r": 5.0,
-          "label": "vida-8-mesa-hibisco"
-        }
-      ],
-      "layout": "pano"
-    },
-    {
-      "type": "som",
-      "id": "vida-som",
-      "dark": false,
-      "hd": {
-        "fase": "Prato principal",
-        "nome": "Vida",
-        "secao": "Sequência do loop"
-      },
-      "rows": [
-        {
-          "label": "Som",
-          "html": "<em>(sugestão)</em> vento em folhas, madeira e fibras, insetos distantes e cordas graves sustentadas por baixo.",
-          "tiles": []
-        },
-        {
-          "label": "Nos pratos",
-          "html": "A vegetação cresce em volta do prato e, no fim da etapa, começa a secar e se desfazer em fibras.",
-          "tiles": []
-        }
-      ]
-    },
-    {
-      "type": "item",
-      "id": "vida-transicao",
-      "dark": false,
-      "variant": "trans",
-      "hd": {
-        "fase": "Prato principal",
-        "nome": "Vida",
-        "secao": "Passagem"
-      },
-      "num": "",
-      "title": "Vida → Cristal",
-      "html": "A vida deixa para trás a própria forma: as estruturas vegetais se desfazem em fibras e entregam sua matéria ao mundo seguinte.",
-      "tiles": [
-        {
-          "kind": "video",
-          "src": "/media/pele-paisagem-seda.mp4",
-          "poster": "/media/pele-paisagem-seda.jpg",
-          "r": 0.75,
-          "label": "pele-paisagem-seda"
-        },
-        {
-          "kind": "video",
-          "src": "/media/transicao-5-poeira-ouro.mp4",
-          "poster": "/media/transicao-5-poeira-ouro.jpg",
-          "r": 0.5625,
-          "label": "transicao-5-poeira-ouro"
-        }
-      ],
-      "layout": "stack"
-    },
-    {
-      "type": "opener",
-      "id": "cristal",
-      "dark": false,
-      "media": {
-        "kind": "video",
-        "src": "/media/cristais-4-prisma.mp4",
-        "poster": "/media/cristais-4-prisma.jpg",
-        "r": 0.5625,
-        "label": "cristais-4-prisma"
-      },
-      "etapa": "Mundo 5 de 6",
+    ],
+    "layout": "stack"
+  },
+  {
+    "type": "som",
+    "id": "materia-primaria-som",
+    "dark": false,
+    "hd": {
       "fase": "Sobremesa",
-      "title": "Cristal",
-      "reino": "Transformação",
-      "sub": "A matéria muda de estado",
-      "narr": "As fibras se reorganizam, se compactam e criam uma estrutura nova. A matéria orgânica perde a aparência vegetal e fica mineral, rígida e translúcida. Surgem as primeiras formações cristalinas, que crescem, se conectam e transformam o espaço inteiro em cristal e luz. A sobremesa acontece nesse estado.",
-      "atm": {
-        "label": "Atmosfera",
-        "html": "Cristal translúcido, prata e branco, com a luz se abrindo em arco-íris sobre fundo escuro."
+      "nome": "Matéria Primária",
+      "secao": "Som · pratos"
+    },
+    "rows": [
+      {
+        "label": "Som",
+        "html": "Vento de deserto, grãos de areia deslizando, percussão orgânica sutil de pedras. Na segunda parte entram frequências graves e puras que “desenham” as mandalas.",
+        "tiles": []
+      },
+      {
+        "label": "Nos pratos",
+        "html": "Mandalas de areia criadas pela frequência do som que ecoa na sala.",
+        "tiles": []
       }
+    ]
+  },
+  {
+    "type": "item",
+    "id": "materia-primaria-transicao",
+    "dark": true,
+    "variant": "trans",
+    "hd": {
+      "fase": "Sobremesa",
+      "nome": "Matéria Primária",
+      "secao": "Transição"
     },
-    {
-      "type": "item",
-      "id": "cristal-sequencia",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Sobremesa",
-        "nome": "Cristal",
-        "secao": "Sequência do loop"
-      },
-      "num": "01",
-      "title": "O cristal cresce",
-      "html": "As formações se multiplicam e ocupam paredes e mesa, como um geodo crescendo em câmera lenta.",
-      "tiles": [
-        {
-          "kind": "image",
-          "src": "/media/cristal-1-gemas.jpg",
-          "r": 2.5221,
-          "label": "cristal-1-gemas"
-        },
-        {
-          "kind": "image",
-          "src": "/media/cristal-3-mesa-gemas.jpg",
-          "r": 4.9505,
-          "label": "cristal-3-mesa-gemas"
-        }
-      ],
-      "layout": "pano"
-    },
-    {
-      "type": "item",
-      "id": "cristal-sequencia-2",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Sobremesa",
-        "nome": "Cristal",
-        "secao": "Sequência do loop"
-      },
-      "num": "02",
-      "title": "Luz e refração",
-      "html": "A luz atravessa as facetas e se abre em cor. Cada reflexo desenha um prisma novo sobre a mesa.",
-      "tiles": [
-        {
-          "kind": "video",
-          "src": "/media/cristais-3-facetas.mp4",
-          "poster": "/media/cristais-3-facetas.jpg",
-          "r": 0.5629,
-          "label": "cristais-3-facetas"
-        },
-        {
-          "kind": "video",
-          "src": "/media/cristais-4-refracao.mp4",
-          "poster": "/media/cristais-4-refracao.jpg",
-          "r": 0.5625,
-          "label": "cristais-4-refracao"
-        },
-        {
-          "kind": "video",
-          "src": "/media/final-3-luz.mp4",
-          "poster": "/media/final-3-luz.jpg",
-          "r": 0.6032,
-          "label": "final-3-luz"
-        },
-        {
-          "kind": "video",
-          "src": "/media/joias-video-1-anel-borboleta.mp4",
-          "poster": "/media/joias-video-1-anel-borboleta.jpg",
-          "r": 0.8,
-          "label": "joias-video-1-anel-borboleta"
-        }
-      ],
-      "layout": "stack"
-    },
-    {
-      "type": "item",
-      "id": "cristal-sequencia-3",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Sobremesa",
-        "nome": "Cristal",
-        "secao": "Sequência do loop"
-      },
-      "num": "03",
-      "title": "Pérola e filigrana",
-      "html": "O mineral fica preciso e ornamental: fios de ouro, pérolas e pedras compõem a superfície, como uma jóia vista de perto.",
-      "tiles": [
-        {
-          "kind": "image",
-          "src": "/media/cristal-2-perolas.jpg",
-          "r": 2.7322,
-          "label": "cristal-2-perolas"
-        },
-        {
-          "kind": "image",
-          "src": "/media/cristal-4-mesa-filigrana.jpg",
-          "r": 4.8426,
-          "label": "cristal-4-mesa-filigrana"
-        }
-      ],
-      "layout": "pano"
-    },
-    {
-      "type": "som",
-      "id": "cristal-som",
-      "dark": false,
-      "hd": {
-        "fase": "Sobremesa",
-        "nome": "Cristal",
-        "secao": "Sequência do loop"
-      },
-      "rows": [
-        {
-          "label": "Som",
-          "html": "Fricção mineral, cristais tilintando, drone grave e batidas tectônicas quase sísmicas.",
-          "tiles": []
-        },
-        {
-          "label": "Nos pratos",
-          "html": "Reflexos de cristal e luz colorida em volta da sobremesa, que no fim começam a se quebrar em fragmentos.",
-          "tiles": []
-        }
-      ]
-    },
-    {
-      "type": "item",
-      "id": "cristal-transicao",
-      "dark": false,
-      "variant": "trans",
-      "hd": {
-        "fase": "Sobremesa",
-        "nome": "Cristal",
-        "secao": "Passagem"
-      },
-      "num": "",
-      "title": "Cristal → Dissolução",
-      "html": "Os cristais começam a se fragmentar. O mundo inteiro volta para a escala microscópica.",
-      "tiles": [
-        {
-          "kind": "video",
-          "src": "/media/final-5-dispersao.mp4",
-          "poster": "/media/final-5-dispersao.jpg",
-          "r": 0.5625,
-          "label": "final-5-dispersao"
-        },
-        {
-          "kind": "video",
-          "src": "/media/final-6-diamante-po.mp4",
-          "poster": "/media/final-6-diamante-po.jpg",
-          "r": 1.7985,
-          "label": "final-6-diamante-po"
-        }
-      ],
-      "layout": "stack"
-    },
-    {
-      "type": "opener",
-      "id": "dissolucao",
-      "dark": false,
-      "media": {
+    "num": "",
+    "title": "Matéria Primária → Pele como Jóia",
+    "html": "A frequência sobe e as mandalas se contraem para o centro de cada prato. A areia inteira é puxada para dentro, e a sala escurece.",
+    "tiles": [
+      {
         "kind": "video",
-        "src": "/media/final-5-dispersao.mp4",
-        "poster": "/media/final-5-dispersao.jpg",
-        "r": 0.5625,
-        "label": "final-5-dispersao"
-      },
-      "etapa": "Mundo 6 de 6",
-      "fase": "Final",
-      "title": "Dissolução",
-      "reino": "Retorno",
-      "sub": "Tudo volta ao começo",
-      "narr": "Os cristais não somem: eles se quebram em fragmentos, depois em partículas cada vez menores, até voltarem ao estado molecular. As moléculas se reorganizam e voltam a formar água. A água encontra novamente a Forma, e a Forma pode começar a experiência de novo.",
-      "atm": {
-        "label": "Atmosfera",
-        "html": "Do preto e branco de volta ao branco do início, passando pela água. Movimento que desacelera até o repouso."
+        "src": "/media/particula-rara-cascata-ouro.mp4",
+        "poster": "/media/particula-rara-cascata-ouro.jpg",
+        "r": 1.7704,
+        "label": "particula-rara-cascata-ouro"
       }
+    ],
+    "layout": "side"
+  },
+  {
+    "type": "opener",
+    "id": "joias",
+    "dark": false,
+    "media": {
+      "kind": "video",
+      "src": "/media/final-4-diamante.mp4",
+      "poster": "/media/final-4-diamante.jpg",
+      "r": 0.5625
     },
-    {
-      "type": "item",
-      "id": "dissolucao-sequencia",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Final",
-        "nome": "Dissolução",
-        "secao": "Sequência do loop"
-      },
-      "num": "01",
-      "title": "Fragmento, partícula, molécula",
-      "html": "O que era sólido se parte, vira pó e depois ponto de luz. A escala diminui até restar só movimento.",
-      "tiles": [
-        {
-          "kind": "video",
-          "src": "/media/final-5-dispersao.mp4",
-          "poster": "/media/final-5-dispersao.jpg",
-          "r": 0.5625,
-          "label": "final-5-dispersao"
-        },
-        {
-          "kind": "video",
-          "src": "/media/bb-7-explosao.mp4",
-          "poster": "/media/bb-7-explosao.jpg",
-          "r": 0.5625,
-          "label": "bb-7-explosao"
-        },
-        {
-          "kind": "video",
-          "src": "/media/foco-energia-2.mp4",
-          "poster": "/media/foco-energia-2.jpg",
-          "r": 1.0,
-          "label": "foco-energia-2"
-        },
-        {
-          "kind": "video",
-          "src": "/media/bb-8-estrelas.mp4",
-          "poster": "/media/bb-8-estrelas.jpg",
-          "r": 0.5625,
-          "label": "bb-8-estrelas"
-        }
-      ],
-      "layout": "stack"
-    },
-    {
-      "type": "item",
-      "id": "dissolucao-sequencia-2",
-      "dark": false,
-      "variant": "seq",
-      "hd": {
-        "fase": "Final",
-        "nome": "Dissolução",
-        "secao": "Sequência do loop"
-      },
-      "num": "02",
-      "title": "A água encontra a Forma",
-      "html": "As moléculas voltam a formar água, a água se aquieta, e a sala volta a ser a mesma luz que recebeu os convidados.",
-      "tiles": [
-        {
-          "kind": "image",
-          "src": "/media/dissolucao-3-esferas.jpg",
-          "r": 5.814,
-          "label": "dissolucao-3-esferas"
-        },
-        {
-          "kind": "image",
-          "src": "/media/dissolucao-2-flores-azuis.jpg",
-          "r": 5.7471,
-          "label": "dissolucao-2-flores-azuis"
-        },
-        {
-          "kind": "image",
-          "src": "/media/dissolucao-1-dentes-de-leao.jpg",
-          "r": 5.5866,
-          "label": "dissolucao-1-dentes-de-leao"
-        }
-      ],
-      "layout": "pano"
-    },
-    {
-      "type": "som",
-      "id": "dissolucao-som",
-      "dark": false,
-      "hd": {
-        "fase": "Final",
-        "nome": "Dissolução",
-        "secao": "Sequência do loop"
-      },
-      "rows": [
-        {
-          "label": "Som",
-          "html": "O mesmo som da abertura: white noise constante e voz da Forma em eco e reverb, sem batida, com o tom grave de fundo. Tudo se dissolve de volta nele. A voz da Forma pode voltar para uma última frase de despedida.",
-          "tiles": []
-        }
-      ]
-    },
-    {
-      "type": "item",
-      "id": "dissolucao-transicao",
-      "dark": false,
-      "variant": "trans",
-      "hd": {
-        "fase": "Final",
-        "nome": "Dissolução",
-        "secao": "Passagem"
-      },
-      "num": "",
-      "title": "Dissolução → A Forma",
-      "html": "A água encontra a Forma. O anel volta a se fechar no centro da parede e o ciclo pode recomeçar.",
-      "tiles": [
-        {
-          "kind": "video",
-          "src": "/media/agua-10-esfera.mp4",
-          "poster": "/media/agua-10-esfera.jpg",
-          "r": 0.5625,
-          "label": "agua-10-esfera"
-        },
-        {
-          "kind": "video",
-          "src": "/media/capa-forma-branca.mp4",
-          "poster": "/media/capa-forma-branca.jpg",
-          "r": 1.7918,
-          "label": "capa-forma-branca"
-        }
-      ],
-      "layout": "stack"
-    },
-    {
-      "type": "resumo",
-      "id": "quadro-resumo",
-      "kicker": "6 mundos",
-      "title": "Quadro-resumo",
-      "head": [
-        "",
-        "#",
-        "Etapa do jantar",
-        "Mundo",
-        "Estado da matéria",
-        "Cor dominante",
-        "Elo de passagem"
-      ],
-      "rows": [
-        {
-          "thumb": {
-            "kind": "image",
-            "src": "/media/capa-forma-branca.jpg",
-            "r": 1.7918,
-            "label": "capa-forma-branca"
-          },
-          "cells": [
-            "1",
-            "Recepção",
-            "<b>A Forma</b>",
-            "Forma",
-            "Branco, cromo",
-            "A Forma se fragmenta e escorre"
-          ]
-        },
-        {
-          "thumb": {
-            "kind": "image",
-            "src": "/media/principal-1-gotas.jpg",
-            "r": 0.6744,
-            "label": "principal-1-gotas"
-          },
-          "cells": [
-            "2",
-            "Couvert",
-            "<b>Origem</b>",
-            "Água",
-            "Azul, prata, turquesa",
-            "As moléculas se agrupam"
-          ]
-        },
-        {
-          "thumb": {
-            "kind": "image",
-            "src": "/media/materia-1-malha-dourada.jpg",
-            "r": 2.3337,
-            "label": "materia-1-malha-dourada"
-          },
-          "cells": [
-            "3",
-            "Entrada",
-            "<b>Matéria</b>",
-            "Organização",
-            "Preto, âmbar, ouro",
-            "As estruturas se ramificam"
-          ]
-        },
-        {
-          "thumb": {
-            "kind": "image",
-            "src": "/media/vida-1-amanhecer.jpg",
-            "r": 2.3337,
-            "label": "vida-1-amanhecer"
-          },
-          "cells": [
-            "4",
-            "Prato principal",
-            "<b>Vida</b>",
-            "Crescimento",
-            "Verde, terra, amanhecer",
-            "A vida se desfaz em fibras"
-          ]
-        },
-        {
-          "thumb": {
-            "kind": "image",
-            "src": "/media/cristal-1-gemas.jpg",
-            "r": 2.5221,
-            "label": "cristal-1-gemas"
-          },
-          "cells": [
-            "5",
-            "Sobremesa",
-            "<b>Cristal</b>",
-            "Transformação",
-            "Cristal, prata, arco-íris",
-            "Os cristais se fragmentam"
-          ]
-        },
-        {
-          "thumb": {
-            "kind": "image",
-            "src": "/media/dissolucao-3-esferas.jpg",
-            "r": 5.814,
-            "label": "dissolucao-3-esferas"
-          },
-          "cells": [
-            "6",
-            "Final",
-            "<b>Dissolução</b>",
-            "Retorno",
-            "Preto e branco, depois branco",
-            "A água reencontra a Forma"
-          ]
-        }
-      ]
+    "etapa": "Etapa 8 de 8",
+    "fase": "Final",
+    "title": "A pele como uma jóia",
+    "reino": "Jóia · Retorno à Forma",
+    "sub": "A matéria se lapida e brilha",
+    "narr": "A pele termina o ciclo. Nasceu da água, virou corpo, perdeu o cuidado e voltou a ser pedra. Agora, lapidada, se revela brilhante e preciosa, cuidada como jóia. E tudo volta à mesma luz que recebeu os convidados.",
+    "atm": {
+      "label": "Atmosfera",
+      "html": "Cristal translúcido, prata e branco, com a luz se abrindo em arco-íris. No fim, só o branco do início."
     }
-  ];
+  },
+  {
+    "type": "item",
+    "id": "joias-sequencia",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Final",
+      "nome": "A pele como uma jóia",
+      "secao": "Sequência do loop"
+    },
+    "num": "01",
+    "title": "O Diamante Aparece",
+    "html": "Cristalização lenta nas paredes, como quartzo ou geodo crescendo em câmera lenta; a areia dá lugar a facetas translúcidas que começam a quebrar a luz em cor.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/joias-video-1-anel-borboleta.mp4",
+        "poster": "/media/joias-video-1-anel-borboleta.jpg",
+        "r": 0.8,
+        "label": "joias-video-1-anel-borboleta"
+      },
+      {
+        "kind": "video",
+        "src": "/media/joias-video-2-anel-rubi.mp4",
+        "poster": "/media/joias-video-2-anel-rubi.jpg",
+        "r": 0.8,
+        "label": "joias-video-2-anel-rubi"
+      }
+    ],
+    "layout": "stack"
+  },
+  {
+    "type": "som",
+    "id": "joias-som",
+    "dark": false,
+    "hd": {
+      "fase": "Final",
+      "nome": "A pele como uma jóia",
+      "secao": "Som · pratos"
+    },
+    "rows": [
+      {
+        "label": "Som",
+        "html": "Fricção mineral, cristais tilintando, drone grave e batidas tectônicas quase sísmicas.",
+        "tiles": []
+      },
+      {
+        "label": "Nos pratos",
+        "html": "Reflexos de cristal e luz colorida, que terminam em luz branca, ecoando o início.",
+        "tiles": []
+      }
+    ]
+  },
+  {
+    "type": "item",
+    "id": "joias-sequencia-3",
+    "dark": false,
+    "variant": "seq",
+    "hd": {
+      "fase": "Final",
+      "nome": "A pele como uma jóia",
+      "secao": "Sequência do loop"
+    },
+    "num": "02",
+    "title": "Retorno à Forma",
+    "html": "Os cristais se desfazem devagar. As facetas se reduzem a pequenas esferas de luz, que se afastam da mesa, sobem e se fundem de volta na Forma central do Início. Sem pico e sem pressa, a sala volta ao branco contínuo e o ciclo se fecha.",
+    "tiles": [
+      {
+        "kind": "video",
+        "src": "/media/capa-forma-branca.mp4",
+        "poster": "/media/capa-forma-branca.jpg",
+        "r": 1.7918,
+        "label": "capa-forma-branca"
+      }
+    ],
+    "layout": "stack"
+  },
+  {
+    "type": "som",
+    "id": "joias-som-retorno",
+    "dark": false,
+    "hd": {
+      "fase": "Final",
+      "nome": "Retorno à Forma",
+      "secao": "Som"
+    },
+    "rows": [
+      {
+        "label": "Som",
+        "html": "O mesmo som da abertura: white noise constante e voz da Forma em eco e reverb, sem batida. Um tom puro e grave de fundo (sugestão: 528 Hz). Tudo se dissolve de volta nele. A voz da Forma pode voltar para uma última frase de despedida.",
+        "tiles": []
+      }
+    ]
+  },
+  {
+    "type": "resumo",
+    "id": "quadro-resumo",
+    "kicker": "8 etapas",
+    "title": "Quadro-resumo",
+    "head": [
+      "",
+      "#",
+      "Etapa do jantar",
+      "Nome",
+      "Momentos",
+      "Reino",
+      "Cor dominante",
+      "Elo de transição"
+    ],
+    "rows": [
+      {
+        "thumb": {
+          "kind": "image",
+          "src": "/media/capa-cromo.jpg",
+          "r": 1.7778
+        },
+        "cells": [
+          "1",
+          "Introdução",
+          "<b>Início</b>",
+          "2 momentos",
+          "Gênese / Forma",
+          "Branco, cromo",
+          "Átomos se juntam no centro e explodem"
+        ]
+      },
+      {
+        "thumb": {
+          "kind": "image",
+          "src": "/media/bb-8-estrelas.jpg",
+          "r": 0.5625
+        },
+        "cells": [
+          "2",
+          "Transição",
+          "<b>O Despertar</b>",
+          "—",
+          "Big Bang",
+          "Preto e branco",
+          "Estrelas viram esferas e se fundem em gota"
+        ]
+      },
+      {
+        "thumb": {
+          "kind": "image",
+          "src": "/media/principal-1-gotas.jpg",
+          "r": 0.6744
+        },
+        "cells": [
+          "3",
+          "Entrada",
+          "<b>Hidratação Molecular</b>",
+          "2 momentos",
+          "Água",
+          "Azul, prata, turquesa",
+          "Bioluminescência vira paisagem de pele"
+        ]
+      },
+      {
+        "thumb": {
+          "kind": "image",
+          "src": "/media/sobremesa-1-seda.jpg",
+          "r": 0.56
+        },
+        "cells": [
+          "4",
+          "Prato Principal",
+          "<b>Pele Sedosa</b>",
+          "1 momento",
+          "Humano",
+          "Bege, terracota, rosa dourado",
+          "A pele se solta como tecido"
+        ]
+      },
+      {
+        "thumb": {
+          "kind": "image",
+          "src": "/media/vento-e-ondas-invertido.jpg",
+          "r": 0.5625
+        },
+        "cells": [
+          "5",
+          "Prato Principal",
+          "<b>Beleza Natural</b>",
+          "2 momentos",
+          "Humano",
+          "Rosa dourado, marfim, pérola",
+          "Constelação humana vira moléculas minerais"
+        ]
+      },
+      {
+        "thumb": {
+          "kind": "image",
+          "src": "/media/entrada-1-areia-dourada.jpg",
+          "r": 0.6667
+        },
+        "cells": [
+          "6",
+          "Sobremesa",
+          "<b>Matéria Primária</b>",
+          "2 momentos",
+          "Mineral",
+          "Terroso, ocre, dourado",
+          "Mandalas se contraem ao centro"
+        ]
+      },
+      {
+        "thumb": {
+          "kind": "image",
+          "src": "/media/particula-rara-cascata-ouro.jpg",
+          "r": 1.7704
+        },
+        "cells": [
+          "7",
+          "Transição",
+          "<b>Partícula Rara</b>",
+          "—",
+          "Mineral",
+          "Grafite, pedra negra, luz branca",
+          "A pedra se parte e liberta a luz"
+        ]
+      },
+      {
+        "thumb": {
+          "kind": "image",
+          "src": "/media/final-4-diamante.jpg",
+          "r": 0.5625
+        },
+        "cells": [
+          "8",
+          "Final",
+          "<b>A pele como uma jóia</b>",
+          "2 momentos",
+          "Jóia / Retorno",
+          "",
+          "Cristais viram esferas e voltam à Forma"
+        ]
+      }
+    ]
+  }
+];
